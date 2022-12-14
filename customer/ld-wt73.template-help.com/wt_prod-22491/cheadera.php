@@ -2,7 +2,7 @@
 <html class="wide wow-animation" lang="en">
 
 <head>
-    <title>Home</title>
+    <title>Account</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -38,13 +38,13 @@
                                 <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
                                 <!-- RD Navbar Brand-->
                                 <div class="rd-navbar-brand">
-                                    <!--Brand--><a class="brand" href="index.php"><img class="brand-logo-dark" src="images/new_new_word.png" alt="" width="105" height="44" /><img class="brand-logo-light" src="images/logo-inverse-212x88.png" alt="" width="106" height="44" /></a>
+                                    <!--Brand--><a class="brand" href="../wt_prod-22491"><img class="brand-logo-dark" src="images/new_new_word.png" alt="" width="105" height="44" /><img class="brand-logo-light" src="images/logo-inverse-212x88.png" alt="" width="106" height="44" /></a>
                                 </div>
                             </div>
                             <div class="rd-navbar-nav-wrap">
                                 <!-- RD Navbar Nav-->
                                 <ul class="rd-navbar-nav">
-                                    <li class="rd-nav-item active"><a class="rd-nav-link" href="index.php">Home</a>
+                                    <li class="rd-nav-item"><a class="rd-nav-link" href="../wt_prod-22491">Home</a>
                                     </li>
 
                                     <!-- 
@@ -90,7 +90,7 @@
                                         </ul> -->
                                     </li>
 
-                                    <li class="rd-nav-item"><a class="rd-nav-link" href="accountchoose.php">Account</a>
+                                    <li class="rd-nav-item active"><a class="rd-nav-link" href="accountchoose.php">Account</a>
                                         <!-- RD Navbar Dropdown -->
                                         <!-- <ul class="rd-menu rd-navbar-dropdown">
                                             <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="grid-shop.php">Grid Shop</a></li>
