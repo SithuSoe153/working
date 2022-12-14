@@ -5,7 +5,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 include('connect.php');
-include('cheader.php');
+include('cheaders.php');
 
 ?>
 
@@ -23,7 +23,7 @@ include('cheader.php');
             <div class="container">
                 <ul class="breadcrumbs-custom-path">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="grid-shop.html">Shop</a></li>
+                    <li><a href="grid-shop.php">Shop</a></li>
                     <li class="active">Shop List</li>
                 </ul>
             </div>
@@ -145,7 +145,7 @@ include('cheader.php');
                                         <option value="3">Sort by alphabet</option>
                                     </select>
                                 </div>
-                                <div class="product-view-toggle"><a class="mdi mdi-apps product-view-link product-view-grid" href="grid-shop.html"></a><a class="mdi mdi-format-list-bulleted product-view-link product-view-list active" href="shop-list.html"></a></div>
+                                <div class="product-view-toggle"><a class="mdi mdi-apps product-view-link product-view-grid" href="grid-shop.php"></a><a class="mdi mdi-format-list-bulleted product-view-link product-view-list active" href="shop-list.html"></a></div>
                             </div>
                         </div>
                     </div>

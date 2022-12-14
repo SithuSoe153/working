@@ -1,5 +1,5 @@
 <?php
-include('cheader.php');
+include('cheaderh.php');
 ?>
 
 <!-- Swiper-->
@@ -12,7 +12,7 @@ include('cheader.php');
                         Top-notch Furniture</h1>
                     <p class="biggest text-white-70" data-caption-animate="fadeScale" data-caption-delay="200">
                         Sofa Store provides the best furniture and accessories for homes and offices.</p>
-                    <div class="btn-wrap" data-caption-animate="fadeInUp" data-caption-delay="300"><a class="btn btn-zachem-tak-delat btn-white btn-zakaria" href="grid-shop.html">Shop
+                    <div class="btn-wrap" data-caption-animate="fadeInUp" data-caption-delay="300"><a class="btn btn-zachem-tak-delat btn-white btn-zakaria" href="grid-shop.php">Shop
                             now</a></div>
                 </div>
             </div>
@@ -26,7 +26,7 @@ include('cheader.php');
                             <p class="biggest mw-lg-330" data-caption-animate="fadeScale" data-caption-delay="200">
                                 Choose anything you need from a wide range of
                                 impressive home decor solutions.</p>
-                            <div class="btn-wrap" data-caption-animate="fadeInUp" data-caption-delay="300"><a class="btn btn-zachem-tak-delat btn-gray-1000 btn-zakaria" href="grid-shop.html">Shop now</a></div>
+                            <div class="btn-wrap" data-caption-animate="fadeInUp" data-caption-delay="300"><a class="btn btn-zachem-tak-delat btn-gray-1000 btn-zakaria" href="grid-shop.php">Shop now</a></div>
                         </div>
                     </div>
                 </div>
@@ -40,7 +40,7 @@ include('cheader.php');
                             <h1 class="swiper-title-1" data-caption-animate="fadeScale" data-caption-delay="100"><span class="text-gray-22">Impressive&nbsp;</span><br class="d-none d-lg-block"><span class="text-gray-23">Lighting</span></h1>
                             <p class="biggest mw-350" data-caption-animate="fadeScale" data-caption-delay="200">
                                 Improve your home’s lighting with hundreds of products available at Sofa.</p>
-                            <div class="btn-wrap" data-caption-animate="fadeInUp" data-caption-delay="300"><a class="btn btn-zachem-tak-delat btn-gray-1000 btn-zakaria" href="grid-shop.html">Shop now</a></div>
+                            <div class="btn-wrap" data-caption-animate="fadeInUp" data-caption-delay="300"><a class="btn btn-zachem-tak-delat btn-gray-1000 btn-zakaria" href="grid-shop.php">Shop now</a></div>
                         </div>
                     </div>
                 </div>
