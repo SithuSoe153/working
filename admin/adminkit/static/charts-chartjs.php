@@ -377,7 +377,7 @@
 					<div class="row text-muted">
 						<div class="col-6 text-start">
 							<p class="mb-0">
-								<a class="text-muted" href="https://adminkit.io/" target="_blank"><strong>AdminKit</strong></a> &copy;
+								<a class="text-muted" href="https://adminkit.io/" target="_blank"><strong>BetterBuild</strong></a> &copy;
 							</p>
 						</div>
 						<div class="col-6 text-end">
@@ -415,7 +415,7 @@
 
 	// jan
 	$jan = "SELECT * FROM orders Where orderdate BETWEEN '2022-01-01' AND '2022-01-31'";
-	$janquery = mysqli_query($con, $jan);
+	$janquery = mysqli_query($connection, $jan);
 	$jancount = mysqli_num_rows($janquery);
 	$jantotalamount = 0;
 
@@ -432,7 +432,7 @@
 
 	// feb
 	$feb = "SELECT * FROM orders Where orderdate BETWEEN '2022-02-01' AND '2022-02-28'";
-	$febquery = mysqli_query($con, $feb);
+	$febquery = mysqli_query($connection, $feb);
 	$febcount = mysqli_num_rows($febquery);
 
 	if ($febcount > 0) {
@@ -449,7 +449,7 @@
 
 	// march
 	$march = "SELECT * FROM orders Where orderdate BETWEEN '2022-3-01' AND '2022-03-31'";
-	$marchquery = mysqli_query($con, $march);
+	$marchquery = mysqli_query($connection, $march);
 	$marchcount = mysqli_num_rows($marchquery);
 	$marchtotalamount = 0;
 
@@ -465,7 +465,7 @@
 
 	// april
 	$april = "SELECT * FROM orders Where orderdate BETWEEN '2022-04-01' AND '2022-04-29'";
-	$aprilquery = mysqli_query($con, $april);
+	$aprilquery = mysqli_query($connection, $april);
 	$aprilcount = mysqli_num_rows($aprilquery);
 	$apriltotalamount = 0;
 
@@ -482,7 +482,7 @@
 
 	// may
 	$may = "SELECT * FROM orders Where orderdate BETWEEN '2022-05-01' AND '2022-05-30'";
-	$mayquery = mysqli_query($con, $may);
+	$mayquery = mysqli_query($connection, $may);
 	$maycount = mysqli_num_rows($mayquery);
 	$maytotalamount = 0;
 
@@ -498,7 +498,7 @@
 
 	// june
 	$june = "SELECT * FROM orders Where orderdate BETWEEN '2022-06-01' AND '2022-06-30'";
-	$junequery = mysqli_query($con, $june);
+	$junequery = mysqli_query($connection, $june);
 	$junecount = mysqli_num_rows($junequery);
 	$junetotalamount = 0;
 
@@ -515,7 +515,7 @@
 
 	// july
 	$july = "SELECT * FROM orders Where orderdate BETWEEN '2022-06-01' AND '2022-06-29'";
-	$julyquery = mysqli_query($con, $july);
+	$julyquery = mysqli_query($connection, $july);
 	$julycount = mysqli_num_rows($julyquery);
 	$julytotalamount = 0;
 
@@ -532,7 +532,7 @@
 
 	// august
 	$august = "SELECT * FROM orders Where orderdate BETWEEN '2022-07-01' AND '2022-07-31'";
-	$augustquery = mysqli_query($con, $august);
+	$augustquery = mysqli_query($connection, $august);
 	$augustcount = mysqli_num_rows($augustquery);
 	$augusttotalamount = 0;
 
@@ -549,7 +549,7 @@
 
 	// september
 	$september = "SELECT * FROM orders Where orderdate BETWEEN '2022-07-01' AND '2022-07-31'";
-	$septemberquery = mysqli_query($con, $september);
+	$septemberquery = mysqli_query($connection, $september);
 	$septembercount = mysqli_num_rows($septemberquery);
 	$septembertotalamount = 0;
 
@@ -566,7 +566,7 @@
 
 	// october
 	$october = "SELECT * FROM orders Where orderdate BETWEEN '2022-07-01' AND '2022-07-31'";
-	$octoberquery = mysqli_query($con, $october);
+	$octoberquery = mysqli_query($connection, $october);
 	$octobercount = mysqli_num_rows($octoberquery);
 	$octobertotalamount = 0;
 
@@ -583,7 +583,7 @@
 
 	// november
 	$november = "SELECT * FROM orders Where orderdate BETWEEN '2022-07-01' AND '2022-07-31'";
-	$novemberquery = mysqli_query($con, $november);
+	$novemberquery = mysqli_query($connection, $november);
 	$novembercount = mysqli_num_rows($novemberquery);
 	$novembertotalamount = 0;
 
@@ -600,7 +600,7 @@
 
 	// december
 	$december = "SELECT * FROM orders Where orderdate BETWEEN '2022-07-01' AND '2022-07-31'";
-	$decemberquery = mysqli_query($con, $december);
+	$decemberquery = mysqli_query($connection, $december);
 	$decembercount = mysqli_num_rows($decemberquery);
 	$decembertotalamount = 0;
 

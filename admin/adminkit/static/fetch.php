@@ -5,15 +5,15 @@ include('connect.php');
 
 if (isset($_POST['view'])) {
 
-  // $con = mysqli_connect("localhost", "root", "", "notif");
+  // $connection = mysqli_connect("localhost", "root", "", "notif");
 
   if ($_POST["view"] != '') {
     $update_query = "UPDATE message SET message_status = 1 WHERE message_status=0";
-    mysqli_query($con, $update_query);
+    mysqli_query($connection, $update_query);
   }
 
   $query = "SELECT * FROM message m, staff s Where m.staffid = s.staffid ORDER BY messageid DESC LIMIT 4";
-  $result = mysqli_query($con, $query);
+  $result = mysqli_query($connection, $query);
 
   function time_elapsed_string($datetime, $full = false)
   {
@@ -90,7 +90,7 @@ if (isset($_POST['view'])) {
 
 
   $status_query = "SELECT * FROM message WHERE message_status=0";
-  $result_query = mysqli_query($con, $status_query);
+  $result_query = mysqli_query($connection, $status_query);
   $count = mysqli_num_rows($result_query);
 
   $data = array(

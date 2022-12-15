@@ -7,7 +7,7 @@ error_reporting(E_ALL);
 
 // ../../
 
-include('../../connect.php');
+include('connect.php');
 include('sheader.php');
 
 if (isset($_POST['btnmessage'])) {

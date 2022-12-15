@@ -81,13 +81,34 @@
 
                                     <li class="rd-nav-item active"><a class="rd-nav-link" href="grid-shop.php">Shop</a>
                                         <!-- RD Navbar Dropdown -->
-                                        <!-- <ul class="rd-menu rd-navbar-dropdown">
-                                            <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="grid-shop.php">Grid Shop</a></li>
-                                            <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="shop-list.php">Shop List</a></li>
-                                            <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="single-product.html">Single Product</a></li>
-                                            <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="cart-page.html">Cart Page</a></li>
+                                        <ul class="rd-menu rd-navbar-dropdown">
+
                                             <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="checkout.html">Checkout</a></li>
-                                        </ul> -->
+                                        </ul>
+
+
+                                        <div class="mb-3">
+                                            <label class="form-label">Category Name</label>
+                                            <?php
+
+                                            $select = "SELECT * FROM category";
+                                            $query = mysqli_query($connection, $select);
+                                            $count = mysqli_num_rows($query);
+
+                                            echo "<select name='categoryid' class='form-select mb-3'>";
+                                            echo "<option selected>Select Category Name</option>";
+                                            for ($i = 0; $i < $count; $i++) {
+                                                $data = mysqli_fetch_array($query);
+                                                $categoryid = $data['categoryid'];
+                                                $categoryname = $data['categoryname'];
+
+                                                echo "<option value='$categoryid'>$categoryname</option>";
+                                            }
+                                            echo "</select>";
+                                            ?>
+                                        </div>
+
+
                                     </li>
 
                                     <li class="rd-nav-item"><a class="rd-nav-link" href="accountchoose.php">Account</a>
