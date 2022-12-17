@@ -79,35 +79,32 @@
 
                                     -->
 
+                                    <?php
+
+                                    include('connect.php');
+
+                                    $select = "SELECT * from category";
+                                    $query = mysqli_query($connection, $select);
+                                    $count = mysqli_num_rows($query);
+
+                                    ?>
+
                                     <li class="rd-nav-item active"><a class="rd-nav-link" href="grid-shop.php">Shop</a>
                                         <!-- RD Navbar Dropdown -->
                                         <ul class="rd-menu rd-navbar-dropdown">
-
-                                            <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="checkout.html">Checkout</a></li>
-                                        </ul>
-
-
-                                        <div class="mb-3">
-                                            <label class="form-label">Category Name</label>
                                             <?php
-
-                                            $select = "SELECT * FROM category";
-                                            $query = mysqli_query($connection, $select);
-                                            $count = mysqli_num_rows($query);
-
-                                            echo "<select name='categoryid' class='form-select mb-3'>";
-                                            echo "<option selected>Select Category Name</option>";
                                             for ($i = 0; $i < $count; $i++) {
+                                                # code...
+
                                                 $data = mysqli_fetch_array($query);
-                                                $categoryid = $data['categoryid'];
                                                 $categoryname = $data['categoryname'];
 
-                                                echo "<option value='$categoryid'>$categoryname</option>";
+                                                echo "<li class='rd-dropdown-item'><a class='rd-dropdown-link' href='checkout.html'>$categoryname</a></li>";
                                             }
-                                            echo "</select>";
                                             ?>
-                                        </div>
 
+
+                                        </ul>
 
                                     </li>
 
