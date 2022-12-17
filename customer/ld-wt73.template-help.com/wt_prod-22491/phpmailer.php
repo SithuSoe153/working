@@ -7,10 +7,6 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 include('connect.php');
-// include('autoidfunction.php');
-
-// include('shoppingcart_functions.php');
-
 
 $file_checker = 'images/captureimage.jpeg';
 
@@ -126,9 +122,3 @@ if (file_exists($file_checker)) {
 
     echo "<script>window.location='index.php'</script>";
 }
-?>
-
-<!-- <form action="phpmailer.php" method="post">
-    <button type="submit" name="btnsendmail">Send Mail</button>
-
-</form> -->

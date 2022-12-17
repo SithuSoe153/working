@@ -40,15 +40,6 @@ include('cheaders.php');
                     <div class="aside row row-30 row-md-50 justify-content-md-between">
                         <div class="aside-item col-12">
 
-                            <!-- <form class="rd-search form-search" action="search-results.html" method="GET"> -->
-                            <!-- <div class="form-wrap">
-                                <label class="form-label" for="search-form">Search...</label>
-                                <input name="txtSearch" class="form-input" id="search-form" type="text" name="s" autocomplete="off">
-                                <button class="btn-search fl-bigmug-line-search74" type="submit" name="btnSearch"></button>
-                            </div> -->
-                            <!-- </form> -->
-
-
                             <h6 class="aside-title">Filter by Price</h6>
                             <!-- RD Range-->
                             <div class="rd-range" data-min="0" data-max="999" data-min-diff="100" data-start="[66, 635]" data-step="1" data-tooltip="false" data-input=".rd-range-input-value-1" data-input-2=".rd-range-input-value-2"></div>
@@ -141,12 +132,8 @@ include('cheaders.php');
                     </div>
                 </div>
                 <div class="col-lg-8 col-xl-9">
-                    <div class="product-top-panel group-md">
-                        <!-- <p class="product-top-panel-title">Showing 1–8 of 28 results</p> -->
-                    </div>
 
                     <div class="row row-30 row-lg-50">
-
 
                         <?php
 

@@ -135,7 +135,7 @@ if (isset($_GET['action'])) {
                                 <div class="group-md group-middle">
                                     <div class="heading-5 fw-medium text-gray-500">Total Quantity</div>
                                     <div class="heading-3 fw-normal"><?php echo CalculateTotalQuantity() ?> Pcs</div>
-                                    <!-- <p> | </p> -->
+
                                     <div class="heading-5 fw-medium text-gray-500">Total Price</div>
                                     <div class="heading-3 fw-normal"><?php echo CalculateTotalAmount() ?> MMK</div>
                                 </div>

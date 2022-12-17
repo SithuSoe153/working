@@ -13,16 +13,6 @@ if (isset($_SESSION['cid'])) {
     echo "<script>window.location='CLogOut.php'</script>";
 }
 
-// if (isset($_SESSION['sid'])) {
-//     // echo "<script>alert('You are staff')</script>";
-//     echo "<script>window.location='adminkit/static/index.php'</script>";
-// }
-
-// if (isset($_SESSION['cid'])) {
-//     // echo "<script>alert('You are Customer')</script>";
-//     echo "<script>window.location='customerprofile.php'</script>";
-// }
-
 ?>
 
 <!DOCTYPE html>
@@ -330,9 +320,6 @@ if (isset($_SESSION['cid'])) {
     <div class="containerr" id="containerr">
         <div class="form-containerr sign-up-containerr">
             <form action="accountchoose.php" method="POST" enctype="multipart/form-data">
-                <!-- <h1>Sign in as Staff or Admin</h1> -->
-
-                <!-- <span>or use your email for registration</span> -->
 
                 <input type="text" name="txtname" required placeholder="Enter Your Name">
                 <input type="email" name="txtmail" required placeholder=" Email Address">

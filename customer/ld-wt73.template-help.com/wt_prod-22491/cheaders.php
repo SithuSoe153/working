@@ -47,37 +47,6 @@
                                     <li class="rd-nav-item"><a class="rd-nav-link" href="../wt_prod-22491">Home</a>
                                     </li>
 
-                                    <!-- 
-
-                                        
-                                        <li class="rd-nav-item"><a class="rd-nav-link" href="#">Pages</a>
-                                        RD Navbar Dropdown
-                                        <ul class="rd-menu rd-navbar-dropdown">
-                                            <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="about-us.html">About Us</a></li>
-                                            <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="what-we-offer.html">What We Offer</a></li>
-                                            <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="our-team.html">Our Team</a></li>
-                                            <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="testimonials.html">Testimonials</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="rd-nav-item"><a class="rd-nav-link" href="grid-blog.html">Blog</a>
-                                    RD Navbar Dropdown
-                                    <ul class="rd-menu rd-navbar-dropdown">
-                                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="grid-blog.html">Grid Blog</a></li>
-                                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="blog-list.html">Blog List</a></li>
-                                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="blog-post.html">Blog Post</a></li>
-                                    </ul>
-                                </li>
-                                
-                                    <li class="rd-nav-item"><a class="rd-nav-link" href="grid-gallery.html">Gallery</a>
-                                        RD Navbar Dropdown
-                                    <ul class="rd-menu rd-navbar-dropdown">
-                                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="grid-gallery.html">Grid Gallery</a></li>
-                                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="grid-fullwidth-gallery.html">Grid Fullwidth Gallery</a></li>
-                                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="masonry-gallery.html">Masonry Gallery</a></li>
-                                    </ul>
-                                    </li>
-
-                                    -->
 
                                     <?php
 
@@ -110,14 +79,7 @@
                                     </li>
 
                                     <li class="rd-nav-item"><a class="rd-nav-link" href="accountchoose.php">Account</a>
-                                        <!-- RD Navbar Dropdown -->
-                                        <!-- <ul class="rd-menu rd-navbar-dropdown">
-                                            <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="grid-shop.php">Grid Shop</a></li>
-                                            <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="shop-list.php">Shop List</a></li>
-                                            <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="single-product.html">Single Product</a></li>
-                                            <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="cart-page.html">Cart Page</a></li>
-                                            <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="checkout.html">Checkout</a></li>
-                                        </ul> -->
+
                                     </li>
 
                                 </ul>
