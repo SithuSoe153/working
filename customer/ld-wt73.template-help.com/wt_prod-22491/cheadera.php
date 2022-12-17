@@ -81,13 +81,21 @@
 
                                     <li class="rd-nav-item"><a class="rd-nav-link" href="grid-shop.php">Shop</a>
                                         <!-- RD Navbar Dropdown -->
-                                        <!-- <ul class="rd-menu rd-navbar-dropdown">
-                                            <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="grid-shop.php">Grid Shop</a></li>
-                                            <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="shop-list.php">Shop List</a></li>
-                                            <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="single-product.html">Single Product</a></li>
-                                            <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="cart-page.html">Cart Page</a></li>
-                                            <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="checkout.html">Checkout</a></li>
-                                        </ul> -->
+                                        <ul class="rd-menu rd-navbar-dropdown">
+                                            <?php
+                                            for ($i = 0; $i < $count; $i++) {
+                                                # code...
+
+                                                $data = mysqli_fetch_array($query);
+                                                $categoryid = $data['categoryid'];
+                                                $categoryname = $data['categoryname'];
+
+                                                echo "<li class='rd-dropdown-item'><a class='rd-dropdown-link' href='grid-shop.php?catid=$categoryid'>$categoryname</a></li>";
+                                            }
+                                            ?>
+
+
+                                        </ul>
                                     </li>
 
                                     <li class="rd-nav-item active"><a class="rd-nav-link" href="accountchoose.php">Account</a>

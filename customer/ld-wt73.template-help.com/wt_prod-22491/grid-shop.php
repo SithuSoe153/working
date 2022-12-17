@@ -8,6 +8,7 @@ session_start();
 include('connect.php');
 include('cheaders.php');
 
+
 ?>
 
 <form action="grid-shop.php" method="POST">
@@ -214,8 +215,69 @@ include('cheaders.php');
                             } else {
                                 echo "<h1><b><u>Search Record Not Found</u></b></h1>";
                             }
+                        } elseif (isset($_REQUEST['catid'])) {
+
+                            $catid = $_REQUEST['catid'];
+
+                            $query = "SELECT * FROM product WHERE categoryid=$catid";
+                            $result = mysqli_query($connection, $query);
+                            $count = mysqli_num_rows($result);
+
+                            if ($count > 0) {
+                                for ($i = 0; $i < $count; $i += 1) {
+                                    $query1 = "SELECT * FROM product WHERE categoryid=$catid LIMIT $i,1";
+                                    $result1 = mysqli_query($connection, $query1);
+                                    $count1 = mysqli_num_rows($result1);
+
+                                    for ($j = 0; $j < $count1; $j++) {
+                                        $arr = mysqli_fetch_array($result1);
+                                        $productid = $arr['productid'];
+                                        $productname = $arr['productname'];
+                                        $price = $arr['unitprice'];
+                                        $Image = $arr['productprofile'];
+                                        $itemdetail = $arr['productdescription'];
+                                        $quantity = $arr['unitquantity'];
+
+                                    ?>
+                                        <div class="col-sm-6 col-md-4 col-lg-6 col-xl-4">
+                                            <!-- Product-->
+                                            <article class="product">
+                                                <div class="product-body">
+
+                                                    <div class="product-figure"><a href="single-product.php?productid=<?php echo $productid ?>"><img src="<?php echo $Image ?>" alt="" width="160" height="155" /></a>
+                                                    </div>
+                                                    <h5 class="product-title"><a href="single-product.php"><?php echo $productname ?></a></h5>
+                                                    <div class="product-price-wrap">
+                                                        <!-- <div class="product-price product-price-old"><?php echo $price ?> MMK</div> -->
+                                                        <div class="product-price"><?php echo $price ?> MMK</div>
+
+                                                    </div>
+                                                </div>
+                                                <?php
+
+                                                if ($quantity < 1) {
+                                                    echo "<span class='product-badge product-badge-sale'>Out Of Stock</span>";
+                                                }
+
+                                                ?>
+
+                                                <div class="product-button-wrap">
+                                                    <div class="product-button"><a class="btn btn-secondary btn-zakaria fl-bigmug-line-search74" href="single-product.php?productid=<?php echo $productid ?>"></a></div>
+                                                    <div class="product-button">
+                                                        <a class="btn btn-primary btn-zakaria fl-bigmug-line-shopping202" href="cart-page.php"></a>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+
+                                    <?php
+
+
+                                    }
+                                }
+                            }
                         } else {
-                            // Search
+
                             $query = "SELECT * FROM product ORDER BY productid";
                             $result = mysqli_query($connection, $query);
                             $count = mysqli_num_rows($result);
