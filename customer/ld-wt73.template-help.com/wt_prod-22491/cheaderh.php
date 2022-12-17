@@ -79,6 +79,16 @@
 
                                     -->
 
+                                    <?php
+
+                                    include('connect.php');
+
+                                    $select = "SELECT * from category";
+                                    $query = mysqli_query($connection, $select);
+                                    $count = mysqli_num_rows($query);
+
+                                    ?>
+
                                     <li class="rd-nav-item"><a class="rd-nav-link" href="grid-shop.php">Shop</a>
                                         <!-- RD Navbar Dropdown -->
                                         <ul class="rd-menu rd-navbar-dropdown">

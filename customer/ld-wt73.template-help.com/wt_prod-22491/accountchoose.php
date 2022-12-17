@@ -88,8 +88,8 @@ if (isset($_SESSION['cid'])) {
 
         button {
             border-radius: 20px;
-            border: 1px solid #fe7865;
-            background-color: #fe7865;
+            border: 1px solid #92c5d9;
+            background-color: #92c5d9;
             color: #FFFFFF;
             font-size: 12px;
             font-weight: bold;
@@ -215,8 +215,8 @@ if (isset($_SESSION['cid'])) {
 
         .overlay {
             background: #de640f;
-            background: -webkit-linear-gradient(to right, #d78477, #ec7663);
-            background: linear-gradient(to right, #d78477, #ec7663);
+            background: -webkit-linear-gradient(to right, #92c5d9, #55539c);
+            background: linear-gradient(to right, #71abc2, #7fc3de);
             background-repeat: no-repeat;
             background-size: cover;
             background-position: 0 0;
@@ -316,7 +316,7 @@ if (isset($_SESSION['cid'])) {
 
         #selectedBanner {
             position: absolute;
-            margin-top: 60%;
+            margin-top: 55%;
             margin-right: 60%;
             z-index: 10;
         }
