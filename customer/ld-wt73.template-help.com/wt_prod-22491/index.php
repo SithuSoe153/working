@@ -146,144 +146,57 @@ include('cheaderh.php');
     <div class="container">
         <h2 class="wow fadeScale">Trending Products</h2>
         <div class="row row-30 row-lg-50">
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <!-- Product-->
-                <article class="product wow fadeInRight">
-                    <div class="product-body">
-                        <div class="product-figure"><img src="images/product-1-129x172.png" alt="" width="129" height="172" />
+
+            <?php
+            $query = "SELECT * FROM product ORDER BY productid";
+            $result = mysqli_query($connection, $query);
+            $count = mysqli_num_rows($result);
+
+            if ($count > 0) {
+                for ($i = 0; $i < $count; $i += 1) {
+                    $query1 = "SELECT * FROM product ORDER BY productname";
+                    $result1 = mysqli_query($connection, $query1);
+                    $count1 = mysqli_num_rows($result1);
+
+                    for ($j = 0; $j < 7; $j++) {
+                        $arr = mysqli_fetch_array($result1);
+                        $productid = $arr['productid'];
+                        $productname = $arr['productname'];
+                        $price = $arr['unitprice'];
+                        $Image = $arr['productprofile'];
+                        $itemdetail = $arr['productdescription'];
+                        $quantity = $arr['unitquantity'];
+
+            ?>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <!-- Product-->
+                            <article class="product wow fadeInRight">
+                                <div class="product-body">
+                                    <div class="product-figure"><a href="single-product.php?productid=<?php echo $productid ?>"><img src="<?php echo $Image ?>" alt="" width="129" height="172" />
+                                    </div>
+                                    <h5 class="product-title"><a href="single-product.html"><?php echo $productname ?></a></h5>
+                                    <div class="product-price-wrap">
+                                        <!-- <div class="product-price product-price-old"><?php echo $price ?> MMK</div> -->
+                                        <div class="product-price"><?php echo $price ?> MMK</div>
+                                    </div>
+                                </div>
+                                <!-- <span class="product-badge product-badge-sale">Sale</span> -->
+                                <div class="product-button-wrap">
+                                    <div class="product-button"><a class="btn btn-secondary btn-zakaria fl-bigmug-line-search74" href="single-product.html"></a></div>
+                                    <div class="product-button"><a class="btn btn-primary btn-zakaria fl-bigmug-line-shopping202" href="cart-page.html"></a></div>
+                                </div>
+                            </article>
                         </div>
-                        <h5 class="product-title"><a href="single-product.html">Garden table</a></h5>
-                        <div class="product-price-wrap">
-                            <div class="product-price product-price-old">$30.00</div>
-                            <div class="product-price">$23.00</div>
-                        </div>
-                    </div><span class="product-badge product-badge-sale">Sale</span>
-                    <div class="product-button-wrap">
-                        <div class="product-button"><a class="btn btn-secondary btn-zakaria fl-bigmug-line-search74" href="single-product.html"></a></div>
-                        <div class="product-button"><a class="btn btn-primary btn-zakaria fl-bigmug-line-shopping202" href="cart-page.html"></a></div>
-                    </div>
-                </article>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <!-- Product-->
-                <article class="product wow fadeInRight" data-wow-delay=".1s">
-                    <div class="product-body">
-                        <div class="product-figure"><img src="images/product-2-160x155.png" alt="" width="160" height="155" />
-                        </div>
-                        <h5 class="product-title"><a href="single-product.html">Club Chair</a></h5>
-                        <div class="product-price-wrap">
-                            <div class="product-price">$13.00</div>
-                        </div>
-                    </div><span class="product-badge product-badge-new">New</span>
-                    <div class="product-button-wrap">
-                        <div class="product-button"><a class="btn btn-secondary btn-zakaria fl-bigmug-line-search74" href="single-product.html"></a></div>
-                        <div class="product-button"><a class="btn btn-primary btn-zakaria fl-bigmug-line-shopping202" href="cart-page.html"></a></div>
-                    </div>
-                </article>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <!-- Product-->
-                <article class="product wow fadeInRight" data-wow-delay=".2s">
-                    <div class="product-body">
-                        <div class="product-figure"><img src="images/product-3-132x200.png" alt="" width="132" height="200" />
-                        </div>
-                        <h5 class="product-title"><a href="single-product.html">pendant lamp</a></h5>
-                        <div class="product-price-wrap">
-                            <div class="product-price">$17.00</div>
-                        </div>
-                    </div>
-                    <div class="product-button-wrap">
-                        <div class="product-button"><a class="btn btn-secondary btn-zakaria fl-bigmug-line-search74" href="single-product.html"></a></div>
-                        <div class="product-button"><a class="btn btn-primary btn-zakaria fl-bigmug-line-shopping202" href="cart-page.html"></a></div>
-                    </div>
-                </article>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <!-- Product-->
-                <article class="product wow fadeInRight" data-wow-delay=".3s">
-                    <div class="product-body">
-                        <div class="product-figure"><img src="images/product-4-140x168.png" alt="" width="140" height="168" />
-                        </div>
-                        <h5 class="product-title"><a href="single-product.html">Dark grey club chair</a></h5>
-                        <div class="product-price-wrap">
-                            <div class="product-price">$14.00</div>
-                        </div>
-                    </div><span class="product-badge product-badge-new">New</span>
-                    <div class="product-button-wrap">
-                        <div class="product-button"><a class="btn btn-secondary btn-zakaria fl-bigmug-line-search74" href="single-product.html"></a></div>
-                        <div class="product-button"><a class="btn btn-primary btn-zakaria fl-bigmug-line-shopping202" href="cart-page.html"></a></div>
-                    </div>
-                </article>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <!-- Product-->
-                <article class="product wow fadeInLeft" data-wow-delay=".3s">
-                    <div class="product-body">
-                        <div class="product-figure"><img src="images/product-5-131x168.png" alt="" width="131" height="168" />
-                        </div>
-                        <h5 class="product-title"><a href="single-product.html">Table Lamp</a></h5>
-                        <div class="product-price-wrap">
-                            <div class="product-price">$11.00</div>
-                        </div>
-                    </div><span class="product-badge product-badge-new">New</span>
-                    <div class="product-button-wrap">
-                        <div class="product-button"><a class="btn btn-secondary btn-zakaria fl-bigmug-line-search74" href="single-product.html"></a></div>
-                        <div class="product-button"><a class="btn btn-primary btn-zakaria fl-bigmug-line-shopping202" href="cart-page.html"></a></div>
-                    </div>
-                </article>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <!-- Product-->
-                <article class="product wow fadeInLeft" data-wow-delay=".2s">
-                    <div class="product-body">
-                        <div class="product-figure"><img src="images/product-6-110x69.png" alt="" width="110" height="69" />
-                        </div>
-                        <h5 class="product-title"><a href="single-product.html">Orange Stacking chair</a></h5>
-                        <div class="product-price-wrap">
-                            <div class="product-price">$15.00</div>
-                        </div>
-                    </div>
-                    <div class="product-button-wrap">
-                        <div class="product-button"><a class="btn btn-secondary btn-zakaria fl-bigmug-line-search74" href="single-product.html"></a></div>
-                        <div class="product-button"><a class="btn btn-primary btn-zakaria fl-bigmug-line-shopping202" href="cart-page.html"></a></div>
-                    </div>
-                </article>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <!-- Product-->
-                <article class="product wow fadeInLeft" data-wow-delay=".1s">
-                    <div class="product-body">
-                        <div class="product-figure"><img src="images/product-7-121x201.png" alt="" width="121" height="201" />
-                        </div>
-                        <h5 class="product-title"><a href="single-product.html">Floor lamp</a></h5>
-                        <div class="product-price-wrap">
-                            <div class="product-price product-price-old">$32.00</div>
-                            <div class="product-price">$22.00</div>
-                        </div>
-                    </div><span class="product-badge product-badge-sale">Sale</span>
-                    <div class="product-button-wrap">
-                        <div class="product-button"><a class="btn btn-secondary btn-zakaria fl-bigmug-line-search74" href="single-product.html"></a></div>
-                        <div class="product-button"><a class="btn btn-primary btn-zakaria fl-bigmug-line-shopping202" href="cart-page.html"></a></div>
-                    </div>
-                </article>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <!-- Product-->
-                <article class="product wow fadeInLeft">
-                    <div class="product-body">
-                        <div class="product-figure"><img src="images/product-8-128x179.png" alt="" width="128" height="179" />
-                        </div>
-                        <h5 class="product-title"><a href="single-product.html">White Chair</a></h5>
-                        <div class="product-price-wrap">
-                            <div class="product-price">$10.00</div>
-                        </div>
-                    </div>
-                    <div class="product-button-wrap">
-                        <div class="product-button"><a class="btn btn-secondary btn-zakaria fl-bigmug-line-search74" href="single-product.html"></a></div>
-                        <div class="product-button"><a class="btn btn-primary btn-zakaria fl-bigmug-line-shopping202" href="cart-page.html"></a></div>
-                    </div>
-                </article>
-            </div>
+
+            <?php
+
+
+                    }
+                }
+            }
+            ?>
+
+
         </div>
     </div>
 </section>

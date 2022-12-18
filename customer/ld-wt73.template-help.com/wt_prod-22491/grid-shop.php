@@ -62,28 +62,41 @@ include('cheaders.php');
                             </div>
                         </div>
                         <div class="aside-item col-sm-6 col-md-5 col-lg-12">
+
+                            <!-- Categories -->
                             <h6 class="aside-title">Categories</h6>
                             <ul class="list-shop-filter">
-                                <li>
-                                    <label class="checkbox-inline">
-                                        <input name="input-group-radio" value="checkbox-1" type="checkbox">All
-                                    </label><span class="list-shop-filter-number">(18)</span>
-                                </li>
-                                <li>
-                                    <label class="checkbox-inline">
-                                        <input name="input-group-radio" value="checkbox-2" type="checkbox">Furniture
-                                    </label><span class="list-shop-filter-number">(9)</span>
-                                </li>
-                                <li>
-                                    <label class="checkbox-inline">
-                                        <input name="input-group-radio" value="checkbox-3" type="checkbox">Decor
-                                    </label><span class="list-shop-filter-number">(5)</span>
-                                </li>
-                                <li>
-                                    <label class="checkbox-inline">
-                                        <input name="input-group-radio" value="checkbox-4" type="checkbox">Accessories
-                                    </label><span class="list-shop-filter-number">(8)</span>
-                                </li>
+
+                                <?php
+
+                                $select = "SELECT * from category";
+                                $query = mysqli_query($connection, $select);
+                                $count = mysqli_num_rows($query);
+
+
+                                for ($i = 0; $i < $count; $i++) {
+
+                                    $data = mysqli_fetch_array($query);
+                                    $categoryid = $data['categoryid'];
+                                    $categoryname = $data['categoryname'];
+
+                                    $selectCatNum = "SELECT * from product Where categoryid = $categoryid";
+                                    $queryCatNum = mysqli_query($connection, $selectCatNum);
+                                    $countCatNum = mysqli_num_rows($queryCatNum);
+
+                                ?>
+                                    <li>
+                                        <label class="checkbox-inline">
+                                            <input name="input-group-radio" value="checkbox-1" type="checkbox"><?php echo $categoryname ?>
+                                        </label><span class="list-shop-filter-number">(<?php echo $countCatNum ?>)</span>
+                                    </li>
+
+                                <?php
+                                }
+
+                                ?>
+
+
                             </ul>
                             <!-- RD Search Form-->
 
