@@ -11,7 +11,7 @@ include('shoppingcart_functions.php');
 
 if (!isset($_SESSION['cid'])) {
     echo "<script>alert('Pls Login Again')</script>";
-    echo "<script>window.location='../../../High1/accountchoose.php'</script>";
+    echo "<script>window.location='accountchoose.php'</script>";
 }
 
 

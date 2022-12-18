@@ -367,7 +367,7 @@ if (isset($_SESSION['cid'])) {
                     <h1>Sign in as Customer!</h1>
                     <p>To keep connected with us please login with your personal info</p>
                     <button class="ghost" id="signIn">Sign In</button>
-                    <a href="index.php">
+                    <a href="../wt_prod-22491/">
                         <button class="ghost"> Back </button>
                     </a>
                 </div>
@@ -375,7 +375,7 @@ if (isset($_SESSION['cid'])) {
                     <h1>Sign up new account!</h1>
                     <p>Enter your personal details and start journey with us</p>
                     <button class="ghost" id="signUp">Sign Up</button>
-                    <a href="index.php">
+                    <a href="../wt_prod-22491/">
                         <button class="ghost"> Back </button>
                     </a>
 

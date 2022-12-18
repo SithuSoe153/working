@@ -22,7 +22,7 @@ if (isset($_POST['btnClogin'])) {
         $_SESSION['cusmail'] = $customermail;
 
         echo "<script>alert('Customer Login Successful')</script>";
-        echo "<script>window.location='index.php'</script>";
+        echo "<script>window.location='../wt_prod-22491/'</script>";
     } else {
         echo "<script>alert('Invalid Customer Login')</script>";
         echo "<script>window.location='accountchoose.php'</script>";

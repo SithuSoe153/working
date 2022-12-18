@@ -77,7 +77,7 @@
                                         </ul>
                                     </li>
 
-                                    <li class="rd-nav-item"><a class="rd-nav-link" href="accountchoose.php">Account</a>
+                                    <li class="rd-nav-item"><a class="rd-nav-link" href="customerProfile.php">Account</a>
 
                                 </ul>
                             </div>
