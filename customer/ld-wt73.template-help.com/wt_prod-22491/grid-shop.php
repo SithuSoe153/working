@@ -27,7 +27,16 @@ include('cheaders.php');
                 <ul class="breadcrumbs-custom-path">
 
                     <li><a href="index.php">Home</a></li>
-                    <li class="active">Shop</li>
+<?php
+if(isset($_REQUEST['catn'])){
+    $name= $_REQUEST['catn'];
+    echo "<li><a href='grid-shop.php'>Shop</a></li>";
+    echo "<li class='active'>$name</li>";
+}else{
+    echo "<li class='active'>SHOP</li>";
+
+}
+?>
                 </ul>
             </div>
         </div>

@@ -118,7 +118,8 @@ include('cheaderh.php');
                             <div class="box-icon-creative-icon linearicons-lampshade"></div>
                         </div>
                         <div class="unit-body">
-                            <h5 class="box-icon-creative-title"><a href="#">DEcor &amp; furniture</a></h5>
+                            <!-- <h5 class="box-icon-creative-title"><a href="#">DEcor &amp; furniture</a></h5> -->
+                            <h5 class="box-icon-creative-title"><a href="#">Decor Furnuture</a></h5>
                             <p class="box-icon-creative-text">Cushions, wall art, drapery</p>
                         </div>
                     </div>
@@ -148,17 +149,17 @@ include('cheaderh.php');
         <div class="row row-30 row-lg-50">
 
             <?php
-            $query = "SELECT * FROM product ORDER BY productid";
+            $query = "SELECT * FROM product ORDER BY productid LIMIT 1";
             $result = mysqli_query($connection, $query);
             $count = mysqli_num_rows($result);
 
             if ($count > 0) {
                 for ($i = 0; $i < $count; $i += 1) {
-                    $query1 = "SELECT * FROM product ORDER BY productname";
+                    $query1 = "SELECT * FROM product ORDER BY productname LIMIT 8";
                     $result1 = mysqli_query($connection, $query1);
                     $count1 = mysqli_num_rows($result1);
 
-                    for ($j = 0; $j < 7; $j++) {
+                    for ($j = 0; $j < $count1; $j++) {
                         $arr = mysqli_fetch_array($result1);
                         $productid = $arr['productid'];
                         $productname = $arr['productname'];

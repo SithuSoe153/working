@@ -69,7 +69,7 @@
                                                 $categoryid = $data['categoryid'];
                                                 $categoryname = $data['categoryname'];
 
-                                                echo "<li class='rd-dropdown-item'><a class='rd-dropdown-link' href='grid-shop.php?catid=$categoryid'>$categoryname</a></li>";
+                                                echo "<li class='rd-dropdown-item'><a class='rd-dropdown-link' href='grid-shop.php?catid=$categoryid&&catn=$categoryname'>$categoryname</a></li>";
                                             }
                                             ?>
 
@@ -78,9 +78,8 @@
 
                                     </li>
 
-                                    <li class="rd-nav-item"><a class="rd-nav-link" href="accountchoose.php">Account</a>
+                                    <li class="rd-nav-item"><a class="rd-nav-link" href="customerProfile.php">Account</a>
 
-                                    </li>
 
                                 </ul>
                             </div>
