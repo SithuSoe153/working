@@ -11,7 +11,7 @@ include('function_test.php');
 
 if (isset($_POST['btnregister'])) {
     
-    Imagef("staffprofile","images/","Cannot upload test profile");
+    Imagef("staffprofile","../../../work/images/","Cannot upload test profile");
     
     Imagedo();
             

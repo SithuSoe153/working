@@ -37,7 +37,7 @@ if (isset($_GET['action'])) {
 <form action="cart-page.php" method="GET">
 
     <section class="breadcrumbs-custom">
-        <div class="parallax-container" data-parallax-img="images/bg-about.jpg">
+        <div class="parallax-container" data-parallax-img="../../../work/images/bg-about.jpg">
             <div class="breadcrumbs-custom-body parallax-content context-dark">
                 <div class="container">
                     <h2 class="breadcrumbs-custom-title">Cart Page</h2>

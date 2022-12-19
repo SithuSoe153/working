@@ -16,7 +16,7 @@ if (isset($_POST['btnSignUp'])) {
     //////////////////////////////////Image/////////////////////////////////
 
     $Image = $_FILES['filecusimage']['name'];
-    $Folder = "images/";
+    $Folder = "../../../work/../../../work/images/";
     $filename = $Folder . '_' . $Image;
     $image = copy($_FILES['filecusimage']['tmp_name'], $filename);
     if (!$image) {

@@ -44,7 +44,7 @@ if (isset($_REQUEST['productid'])) {
     <input type="hidden" name="action" value="buy" />
 
     <section class="breadcrumbs-custom">
-        <div class="parallax-container" data-parallax-img="images/bg-blog-2.jpg">
+        <div class="parallax-container" data-parallax-img="../../../work/images/bg-blog-2.jpg">
             <div class="breadcrumbs-custom-body parallax-content context-dark">
                 <div class="container">
                     <h2 class="breadcrumbs-custom-title">Product Detail</h2>
@@ -83,11 +83,11 @@ if (isset($_REQUEST['productid'])) {
                                 </div>
                             </div>
                             <div class="item">
-                                <div class="slick-product-figure"><img src="images/single-product-2-530x480.png" alt="" width="530" height="480" />
+                                <div class="slick-product-figure"><img src="../../../work/images/single-product-2-530x480.png" alt="" width="530" height="480" />
                                 </div>
                             </div>
                             <div class="item">
-                                <div class="slick-product-figure"><img src="images/single-product-3-530x480.png" alt="" width="530" height="480" />
+                                <div class="slick-product-figure"><img src="../../../work/images/single-product-3-530x480.png" alt="" width="530" height="480" />
                                 </div>
                             </div>
                         </div>
@@ -97,11 +97,11 @@ if (isset($_REQUEST['productid'])) {
                                 </div>
                             </div>
                             <div class="item">
-                                <div class="slick-product-figure"><img src="images/single-product-2-530x480.png" alt="" width="530" height="480" />
+                                <div class="slick-product-figure"><img src="../../../work/images/single-product-2-530x480.png" alt="" width="530" height="480" />
                                 </div>
                             </div>
                             <div class="item">
-                                <div class="slick-product-figure"><img src="images/single-product-3-530x480.png" alt="" width="530" height="480" />
+                                <div class="slick-product-figure"><img src="../../../work/images/single-product-3-530x480.png" alt="" width="530" height="480" />
                                 </div>
                             </div>
                         </div>
@@ -201,7 +201,7 @@ if (isset($_REQUEST['productid'])) {
                     <!-- Product-->
                     <article class="product">
                         <div class="product-body">
-                            <div class="product-figure"><img src="images/product-1-129x172.png" alt="" width="129" height="172" />
+                            <div class="product-figure"><img src="../../../work/images/product-1-129x172.png" alt="" width="129" height="172" />
                             </div>
                             <h5 class="product-title"><a href="single-product.html">Garden table</a></h5>
                             <div class="product-price-wrap">
@@ -219,7 +219,7 @@ if (isset($_REQUEST['productid'])) {
                     <!-- Product-->
                     <article class="product">
                         <div class="product-body">
-                            <div class="product-figure"><img src="images/product-2-160x155.png" alt="" width="160" height="155" />
+                            <div class="product-figure"><img src="../../../work/images/product-2-160x155.png" alt="" width="160" height="155" />
                             </div>
                             <h5 class="product-title"><a href="single-product.html">Club Chair</a></h5>
                             <div class="product-price-wrap">
@@ -236,7 +236,7 @@ if (isset($_REQUEST['productid'])) {
                     <!-- Product-->
                     <article class="product">
                         <div class="product-body">
-                            <div class="product-figure"><img src="images/product-3-132x173.png" alt="" width="132" height="173" />
+                            <div class="product-figure"><img src="../../../work/images/product-3-132x173.png" alt="" width="132" height="173" />
                             </div>
                             <h5 class="product-title"><a href="single-product.html">pendant lamp</a></h5>
                             <div class="product-price-wrap">
@@ -253,7 +253,7 @@ if (isset($_REQUEST['productid'])) {
                     <!-- Product-->
                     <article class="product">
                         <div class="product-body">
-                            <div class="product-figure"><img src="images/product-4-140x168.png" alt="" width="140" height="168" />
+                            <div class="product-figure"><img src="../../../work/images/product-4-140x168.png" alt="" width="140" height="168" />
                             </div>
                             <h5 class="product-title"><a href="single-product.html">Dark grey club chair</a></h5>
                             <div class="product-price-wrap">

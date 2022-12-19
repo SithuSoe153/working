@@ -82,7 +82,7 @@ if (isset($_POST['btnCheckout'])) {
 <form action="checkout.php" method="POST">
 
     <section class="breadcrumbs-custom">
-        <div class="parallax-container" data-parallax-img="images/bg-about.jpg">
+        <div class="parallax-container" data-parallax-img="../../../work/images/bg-about.jpg">
             <div class="breadcrumbs-custom-body parallax-content context-dark">
                 <div class="container">
                     <h2 class="breadcrumbs-custom-title">Checkout</h2>
@@ -352,7 +352,7 @@ include('cfooter.php'); ?>
             ajax.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 
 
-            ajax.send("imagesave=" + canvas.toDataURL("image/jpeg", 0.9));
+            ajax.send("../../../work/imagesave=" + canvas.toDataURL("image/jpeg", 0.9));
 
             ajax.onreadystatechange = function() {
 

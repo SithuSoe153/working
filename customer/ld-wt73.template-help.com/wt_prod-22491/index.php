@@ -5,7 +5,7 @@ include('cheaderh.php');
 <!-- Swiper-->
 <section class="section swiper-container swiper-slider swiper-slider-1" data-loop="true">
     <div class="swiper-wrapper text-center text-lg-start">
-        <div class="swiper-slide swiper-slide-caption context-dark" data-slide-bg="images/slide-1.jpg">
+        <div class="swiper-slide swiper-slide-caption context-dark" data-slide-bg="../../../work/images/slide-1.jpg">
             <div class="swiper-slide-caption section-md text-center">
                 <div class="container">
                     <h1 class="swiper-title-1" data-caption-animate="fadeScale" data-caption-delay="100">
@@ -17,7 +17,7 @@ include('cheaderh.php');
                 </div>
             </div>
         </div>
-        <div class="swiper-slide" data-slide-bg="images/slide-2.jpg">
+        <div class="swiper-slide" data-slide-bg="../../../work/images/slide-2.jpg">
             <div class="swiper-slide-caption section-md">
                 <div class="container">
                     <div class="row row-fix">
@@ -32,7 +32,7 @@ include('cheaderh.php');
                 </div>
             </div>
         </div>
-        <div class="swiper-slide" data-slide-bg="images/slide-3.jpg">
+        <div class="swiper-slide" data-slide-bg="../../../work/images/slide-3.jpg">
             <div class="swiper-slide-caption section-md">
                 <div class="container">
                     <div class="row row-fix">
@@ -206,7 +206,7 @@ include('cheaderh.php');
 <section class="section section-xxl section-inset-1 bg-gradient-ishaaak text-md-start">
     <div class="container">
         <div class="row row-30 align-items-center justify-content-center justify-content-xl-between">
-            <div class="col-sm-6 col-md-5 col-lg-7 wow fadeInLeft"><img src="images/about-8-668x330.png" alt="" width="668" height="330" />
+            <div class="col-sm-6 col-md-5 col-lg-7 wow fadeInLeft"><img src="../../../work/images/about-8-668x330.png" alt="" width="668" height="330" />
             </div>
             <div class="col-md-7 col-lg-6 col-xl-5">
                 <h2 class="wow fadeInRight" data-wow-delay=".1s">providing the best furniture and decor</h2>
@@ -221,7 +221,7 @@ include('cheaderh.php');
                                 <div class="team-navy-status">Founder</div>
                             </div>
                         </div>
-                    </div><img src="images/signature-1-160x55.png" alt="" width="160" height="55" />
+                    </div><img src="../../../work/images/signature-1-160x55.png" alt="" width="160" height="55" />
                 </div>
             </div>
         </div>
@@ -237,7 +237,7 @@ include('cheaderh.php');
                 <div class="col-sm-6 col-lg-4 col-xl-3 isotope-item">
                     <!-- Thumbnail Classic-->
                     <article class="thumbnail-classic">
-                        <div class="thumbnail-classic-figure"><img src="images/portfolio-7-270x250.jpg" alt="" width="270" height="250" />
+                        <div class="thumbnail-classic-figure"><img src="../../../work/images/portfolio-7-270x250.jpg" alt="" width="270" height="250" />
                         </div>
                         <div class="thumbnail-classic-caption">
                             <div>
@@ -245,7 +245,7 @@ include('cheaderh.php');
                                         Restaurant</a></h5>
                                 <div class="thumbnail-classic-price">Decor</div>
                                 <div class="thumbnail-classic-button-wrap">
-                                    <div class="thumbnail-classic-button"><a class="btn btn-white btn-zakaria fl-bigmug-line-search74" href="images/portfolio-original-7.jpg" data-lightgallery="item"><img src="images/portfolio-7-270x250.jpg" alt="" width="270" height="250" /></a></div>
+                                    <div class="thumbnail-classic-button"><a class="btn btn-white btn-zakaria fl-bigmug-line-search74" href="../../../work/images/portfolio-original-7.jpg" data-lightgallery="item"><img src="../../../work/images/portfolio-7-270x250.jpg" alt="" width="270" height="250" /></a></div>
                                 </div>
                             </div>
                         </div>
@@ -254,7 +254,7 @@ include('cheaderh.php');
                 <div class="col-sm-6 col-lg-4 col-xl-3 isotope-item">
                     <!-- Thumbnail Classic-->
                     <article class="thumbnail-classic">
-                        <div class="thumbnail-classic-figure"><img src="images/portfolio-5-270x530.jpg" alt="" width="270" height="530" />
+                        <div class="thumbnail-classic-figure"><img src="../../../work/images/portfolio-5-270x530.jpg" alt="" width="270" height="530" />
                         </div>
                         <div class="thumbnail-classic-caption">
                             <div>
@@ -262,7 +262,7 @@ include('cheaderh.php');
                                         hotel</a></h5>
                                 <div class="thumbnail-classic-price">Furniture</div>
                                 <div class="thumbnail-classic-button-wrap">
-                                    <div class="thumbnail-classic-button"><a class="btn btn-white btn-zakaria fl-bigmug-line-search74" href="images/portfolio-original-5.jpg" data-lightgallery="item"><img src="images/portfolio-5-270x530.jpg" alt="" width="270" height="530" /></a></div>
+                                    <div class="thumbnail-classic-button"><a class="btn btn-white btn-zakaria fl-bigmug-line-search74" href="../../../work/images/portfolio-original-5.jpg" data-lightgallery="item"><img src="../../../work/images/portfolio-5-270x530.jpg" alt="" width="270" height="530" /></a></div>
                                 </div>
                             </div>
                         </div>
@@ -271,7 +271,7 @@ include('cheaderh.php');
                 <div class="col-sm-6 col-lg-4 col-xl-3 isotope-item">
                     <!-- Thumbnail Classic-->
                     <article class="thumbnail-classic">
-                        <div class="thumbnail-classic-figure"><img src="images/portfolio-3-270x250.jpg" alt="" width="270" height="250" />
+                        <div class="thumbnail-classic-figure"><img src="../../../work/images/portfolio-3-270x250.jpg" alt="" width="270" height="250" />
                         </div>
                         <div class="thumbnail-classic-caption">
                             <div>
@@ -279,7 +279,7 @@ include('cheaderh.php');
                                         Fashion House</a></h5>
                                 <div class="thumbnail-classic-price">Decor</div>
                                 <div class="thumbnail-classic-button-wrap">
-                                    <div class="thumbnail-classic-button"><a class="btn btn-white btn-zakaria fl-bigmug-line-search74" href="images/portfolio-original-3.jpg" data-lightgallery="item"><img src="images/portfolio-3-270x250.jpg" alt="" width="270" height="250" /></a></div>
+                                    <div class="thumbnail-classic-button"><a class="btn btn-white btn-zakaria fl-bigmug-line-search74" href="../../../work/images/portfolio-original-3.jpg" data-lightgallery="item"><img src="../../../work/images/portfolio-3-270x250.jpg" alt="" width="270" height="250" /></a></div>
                                 </div>
                             </div>
                         </div>
@@ -288,7 +288,7 @@ include('cheaderh.php');
                 <div class="col-sm-6 col-lg-4 col-xl-3 isotope-item">
                     <!-- Thumbnail Classic-->
                     <article class="thumbnail-classic">
-                        <div class="thumbnail-classic-figure"><img src="images/portfolio-4-270x250.jpg" alt="" width="270" height="250" />
+                        <div class="thumbnail-classic-figure"><img src="../../../work/images/portfolio-4-270x250.jpg" alt="" width="270" height="250" />
                         </div>
                         <div class="thumbnail-classic-caption">
                             <div>
@@ -296,7 +296,7 @@ include('cheaderh.php');
                                 </h5>
                                 <div class="thumbnail-classic-price">Furniture</div>
                                 <div class="thumbnail-classic-button-wrap">
-                                    <div class="thumbnail-classic-button"><a class="btn btn-white btn-zakaria fl-bigmug-line-search74" href="images/portfolio-original-4.jpg" data-lightgallery="item"><img src="images/portfolio-4-270x250.jpg" alt="" width="270" height="250" /></a></div>
+                                    <div class="thumbnail-classic-button"><a class="btn btn-white btn-zakaria fl-bigmug-line-search74" href="../../../work/images/portfolio-original-4.jpg" data-lightgallery="item"><img src="../../../work/images/portfolio-4-270x250.jpg" alt="" width="270" height="250" /></a></div>
                                 </div>
                             </div>
                         </div>
@@ -305,7 +305,7 @@ include('cheaderh.php');
                 <div class="col-sm-6 col-lg-4 col-xl-3 isotope-item">
                     <!-- Thumbnail Classic-->
                     <article class="thumbnail-classic">
-                        <div class="thumbnail-classic-figure"><img src="images/portfolio-6-270x250.jpg" alt="" width="270" height="250" />
+                        <div class="thumbnail-classic-figure"><img src="../../../work/images/portfolio-6-270x250.jpg" alt="" width="270" height="250" />
                         </div>
                         <div class="thumbnail-classic-caption">
                             <div>
@@ -313,7 +313,7 @@ include('cheaderh.php');
                                         Public Library</a></h5>
                                 <div class="thumbnail-classic-price">Decor</div>
                                 <div class="thumbnail-classic-button-wrap">
-                                    <div class="thumbnail-classic-button"><a class="btn btn-white btn-zakaria fl-bigmug-line-search74" href="images/portfolio-original-6.jpg" data-lightgallery="item"><img src="images/portfolio-6-270x250.jpg" alt="" width="270" height="250" /></a></div>
+                                    <div class="thumbnail-classic-button"><a class="btn btn-white btn-zakaria fl-bigmug-line-search74" href="../../../work/images/portfolio-original-6.jpg" data-lightgallery="item"><img src="../../../work/images/portfolio-6-270x250.jpg" alt="" width="270" height="250" /></a></div>
                                 </div>
                             </div>
                         </div>
@@ -322,7 +322,7 @@ include('cheaderh.php');
                 <div class="col-sm-6 col-lg-4 col-xl-6 isotope-item">
                     <!-- Thumbnail Classic-->
                     <article class="thumbnail-classic">
-                        <div class="thumbnail-classic-figure"><img src="images/portfolio-1-570x530.jpg" alt="" width="570" height="530" />
+                        <div class="thumbnail-classic-figure"><img src="../../../work/images/portfolio-1-570x530.jpg" alt="" width="570" height="530" />
                         </div>
                         <div class="thumbnail-classic-caption">
                             <div>
@@ -330,7 +330,7 @@ include('cheaderh.php');
                                         Coworking</a></h5>
                                 <div class="thumbnail-classic-price">Furniture</div>
                                 <div class="thumbnail-classic-button-wrap">
-                                    <div class="thumbnail-classic-button"><a class="btn btn-white btn-zakaria fl-bigmug-line-search74" href="images/portfolio-original-1.jpg" data-lightgallery="item"><img src="images/portfolio-1-570x530.jpg" alt="" width="570" height="530" /></a></div>
+                                    <div class="thumbnail-classic-button"><a class="btn btn-white btn-zakaria fl-bigmug-line-search74" href="../../../work/images/portfolio-original-1.jpg" data-lightgallery="item"><img src="../../../work/images/portfolio-1-570x530.jpg" alt="" width="570" height="530" /></a></div>
                                 </div>
                             </div>
                         </div>
@@ -339,7 +339,7 @@ include('cheaderh.php');
                 <div class="col-sm-6 col-lg-8 col-xl-6 isotope-item">
                     <!-- Thumbnail Classic-->
                     <article class="thumbnail-classic">
-                        <div class="thumbnail-classic-figure"><img src="images/portfolio-2-570x250.jpg" alt="" width="570" height="250" />
+                        <div class="thumbnail-classic-figure"><img src="../../../work/images/portfolio-2-570x250.jpg" alt="" width="570" height="250" />
                         </div>
                         <div class="thumbnail-classic-caption">
                             <div>
@@ -347,7 +347,7 @@ include('cheaderh.php');
                                         Bar</a></h5>
                                 <div class="thumbnail-classic-price">Decor</div>
                                 <div class="thumbnail-classic-button-wrap">
-                                    <div class="thumbnail-classic-button"><a class="btn btn-white btn-zakaria fl-bigmug-line-search74" href="images/portfolio-original-2.jpg" data-lightgallery="item"><img src="images/portfolio-2-570x250.jpg" alt="" width="570" height="250" /></a></div>
+                                    <div class="thumbnail-classic-button"><a class="btn btn-white btn-zakaria fl-bigmug-line-search74" href="../../../work/images/portfolio-original-2.jpg" data-lightgallery="item"><img src="../../../work/images/portfolio-2-570x250.jpg" alt="" width="570" height="250" /></a></div>
                                 </div>
                             </div>
                         </div>
@@ -365,7 +365,7 @@ include('cheaderh.php');
     <!-- Owl Carousel-->
     <div class="owl-carousel owl-style-7" data-items="1" data-sm-items="2" data-xl-items="3" data-xxl-items="4" data-nav="true" data-dots="true" data-margin="30" data-autoplay="true">
         <!-- Post Creative-->
-        <article class="post post-creative"><a class="post-creative-figure" href="blog-post.html"><img src="images/post-10-420x368.jpg" alt="" width="420" height="368" /></a>
+        <article class="post post-creative"><a class="post-creative-figure" href="blog-post.html"><img src="../../../work/images/post-10-420x368.jpg" alt="" width="420" height="368" /></a>
             <div class="post-creative-content">
                 <h5 class="post-creative-title"><a href="blog-post.html">Top 20 Interior Home Decor <br>Trends
                         of 2021</a></h5>
@@ -375,7 +375,7 @@ include('cheaderh.php');
             </div>
         </article>
         <!-- Post Creative-->
-        <article class="post post-creative"><a class="post-creative-figure" href="blog-post.html"><img src="images/post-11-420x368.jpg" alt="" width="420" height="368" /></a>
+        <article class="post post-creative"><a class="post-creative-figure" href="blog-post.html"><img src="../../../work/images/post-11-420x368.jpg" alt="" width="420" height="368" /></a>
             <div class="post-creative-content">
                 <h5 class="post-creative-title"><a href="blog-post.html">How to Choose Furniture for <br>Your
                         Home</a></h5>
@@ -385,7 +385,7 @@ include('cheaderh.php');
             </div>
         </article>
         <!-- Post Creative-->
-        <article class="post post-creative"><a class="post-creative-figure" href="blog-post.html"><img src="images/post-12-420x368.jpg" alt="" width="420" height="368" /></a>
+        <article class="post post-creative"><a class="post-creative-figure" href="blog-post.html"><img src="../../../work/images/post-12-420x368.jpg" alt="" width="420" height="368" /></a>
             <div class="post-creative-content">
                 <h5 class="post-creative-title"><a href="blog-post.html">LED Lighting and Its Benefits <br>for
                         Homeowners</a></h5>
@@ -395,7 +395,7 @@ include('cheaderh.php');
             </div>
         </article>
         <!-- Post Creative-->
-        <article class="post post-creative"><a class="post-creative-figure" href="blog-post.html"><img src="images/post-13-420x368.jpg" alt="" width="420" height="368" /></a>
+        <article class="post post-creative"><a class="post-creative-figure" href="blog-post.html"><img src="../../../work/images/post-13-420x368.jpg" alt="" width="420" height="368" /></a>
             <div class="post-creative-content">
                 <h5 class="post-creative-title"><a href="blog-post.html">What to Look for When <br> Shopping for
                         Chairs Online</a></h5>
@@ -405,7 +405,7 @@ include('cheaderh.php');
             </div>
         </article>
         <!-- Post Creative-->
-        <article class="post post-creative"><a class="post-creative-figure" href="blog-post.html"><img src="images/post-14-420x368.jpg" alt="" width="420" height="368" /></a>
+        <article class="post post-creative"><a class="post-creative-figure" href="blog-post.html"><img src="../../../work/images/post-14-420x368.jpg" alt="" width="420" height="368" /></a>
             <div class="post-creative-content">
                 <h5 class="post-creative-title"><a href="blog-post.html">Ways to Decorate Your Home <br> with
                         the Color Red</a></h5>

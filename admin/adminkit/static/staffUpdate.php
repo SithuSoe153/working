@@ -44,7 +44,7 @@ if (isset($_POST['btnregister'])) {
 
 
 	$Image = $_FILES['staffprofile']['name'];
-	$Folder = "images/";
+	$Folder = "../../../work/images/";
 	$filename = $Folder . '_' . $Image;
 	$image = copy($_FILES['staffprofile']['tmp_name'], $filename);
 	if (!$image) {

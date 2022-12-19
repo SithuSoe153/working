@@ -8,7 +8,7 @@ error_reporting(E_ALL);
 
 include('connect.php');
 
-$file_checker = 'images/captureimage.jpeg';
+$file_checker = '../../../work/images/captureimage.jpeg';
 
 
 
@@ -77,8 +77,8 @@ if (file_exists($file_checker)) {
     ';
 
         // $mail->msgHTML(file_get_contents('checkout.php'), __DIR__);
-        $mail->addEmbeddedImage(dirname(__FILE__) . '/images/captureimage.jpeg', 'order_report');
-        // $mail->addAttachment('./images/ha.jpg', 'new.jpg');    //Optional name
+        $mail->addEmbeddedImage(dirname(__FILE__) . '/../../../work/images/captureimage.jpeg', 'order_report');
+        // $mail->addAttachment('./../../../work/images/ha.jpg', 'new.jpg');    //Optional name
         // $mail->addAttachment('/files/report.docx');
 
         $mail->AltBody = 'This text will show in the main page beside the name.';
@@ -88,7 +88,7 @@ if (file_exists($file_checker)) {
         // echo 'Message has been sent <br>';
         echo "<script>alert('Please Check Your Gmail !')</script>";
 
-        $file_pointer = "images/captureimage.jpeg";
+        $file_pointer = "../../../work/images/captureimage.jpeg";
 
         // Use unlink() function to delete a file
         if (!unlink($file_pointer)) {
@@ -111,7 +111,7 @@ if (file_exists($file_checker)) {
 
 } else {
 
-    $file_pointer = "images/captureimage.jpeg";
+    $file_pointer = "../../../work/images/captureimage.jpeg";
 
     // Use unlink() function to delete a file
     if (!unlink($file_pointer)) {

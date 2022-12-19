@@ -44,7 +44,7 @@ if (isset($_POST['btnregister'])) {
 	//////////////////////////////////Image/////////////////////////////////
 
 	$Image = $_FILES['productprofile']['name'];
-	$Folder = "images/";
+	$Folder = "../../../work/images/";
 	// $Folder1 = "../../images/";
 	// $Folder2 = "../../../Raw/images/";
 	$filename = $Folder . '_' . $Image;
@@ -82,7 +82,7 @@ if (isset($_POST['btnregister'])) {
 	}
 	
 }else{
-	$filename3D="null";
+	$filename3D="";
 }
 	/////////////////////////////////////////////////////////////////////////
 	
@@ -105,7 +105,7 @@ if (isset($_POST['btnregister'])) {
 		exit();
 	}
 }else {
-	$filenameAR="null";
+	$filenameAR="";
 }
 
 	/////////////////////////////////////////////////////////////////////////

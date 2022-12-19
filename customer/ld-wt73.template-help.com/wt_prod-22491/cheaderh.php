@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <script src="/cdn-cgi/apps/head/3ts2ksMwXvKRuG480KNifJ2_JNM.js"></script>
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../../../work/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700%7CLato%7CKalam:300,400,700">
 
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
@@ -38,7 +38,7 @@
                                 <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
                                 <!-- RD Navbar Brand-->
                                 <div class="rd-navbar-brand">
-                                    <!--Brand--><a class="brand" href="../wt_prod-22491"><img class="brand-logo-dark" src="images/new_new_word.png" alt="" width="105" height="44" /><img class="brand-logo-light" src="images/logo-inverse-212x88.png" alt="" width="106" height="44" /></a>
+                                    <!--Brand--><a class="brand" href="../wt_prod-22491"><img class="brand-logo-dark" src="../../../work/images/new_new_word.png" alt="" width="105" height="44" /><img class="brand-logo-light" src="../../../work/images/logo-inverse-212x88.png" alt="" width="106" height="44" /></a>
                                 </div>
                             </div>
                             <div class="rd-navbar-nav-wrap">
@@ -122,7 +122,7 @@
                                     <div>
                                         <div>
                                             <!-- Owl Carousel-->
-                                            <div class="owl-carousel" data-items="1" data-dots="true" data-autoplay="true"><img src="images/about-5-350x269.jpg" alt="" width="350" height="269" /><img src="images/about-6-350x269.jpg" alt="" width="350" height="269" /><img src="images/about-7-350x269.jpg" alt="" width="350" height="269" />
+                                            <div class="owl-carousel" data-items="1" data-dots="true" data-autoplay="true"><img src="../../../work/images/about-5-350x269.jpg" alt="" width="350" height="269" /><img src="../../../work/images/about-6-350x269.jpg" alt="" width="350" height="269" /><img src="../../../work/images/about-7-350x269.jpg" alt="" width="350" height="269" />
                                             </div>
                                             <ul class="contacts-modern">
                                                 <li><a href="#">523 Sylvan Ave, 5th Floor<br>Mountain View, CA 94041

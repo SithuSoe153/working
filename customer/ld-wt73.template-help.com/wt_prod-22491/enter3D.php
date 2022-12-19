@@ -60,7 +60,7 @@ if (isset($_REQUEST['productid'])) {
 
 <body>
     <div class="box">
-        <model-viewer src="<?php echo $product3D ?>" ios-src="<?php echo $productAR ?>" poster="images/cubeloader2.2.gif" camera-controls auto-rotate ar disable-zoom loading="eager">
+        <model-viewer src="<?php echo $product3D ?>" ios-src="<?php echo $productAR ?>" poster="../../../work/images/cubeloader2.2.gif" camera-controls auto-rotate ar disable-zoom loading="eager">
 
             <a href="enter3D.php?productid=<?php echo $_REQUEST['productid'] ?>">
 

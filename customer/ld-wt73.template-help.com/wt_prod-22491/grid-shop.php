@@ -15,7 +15,7 @@ include('cheaders.php');
 
 
     <section class="breadcrumbs-custom">
-        <div class="parallax-container" data-parallax-img="images/bg-blog-2.jpg">
+        <div class="parallax-container" data-parallax-img="../../../work/images/bg-blog-2.jpg">
             <div class="breadcrumbs-custom-body parallax-content context-dark">
                 <div class="container">
                     <h2 class="breadcrumbs-custom-title"> Product Display</h2>
@@ -117,7 +117,7 @@ if(isset($_REQUEST['catn'])){
                                     <!-- Product Minimal-->
                                     <article class="product-minimal">
                                         <div class="unit unit-spacing-sm flex-column flex-md-row align-items-center">
-                                            <div class="unit-left"><a class="product-minimal-figure" href="single-product.html"><img src="images/product-mini-1-106x104.png" alt="" width="106" height="104" /></a></div>
+                                            <div class="unit-left"><a class="product-minimal-figure" href="single-product.html"><img src="../../../work/images/product-mini-1-106x104.png" alt="" width="106" height="104" /></a></div>
                                             <div class="unit-body">
                                                 <p class="product-minimal-title"><a href="single-product.html">Table Lamp</a></p>
                                                 <p class="product-minimal-price">$25.00</p>
@@ -129,7 +129,7 @@ if(isset($_REQUEST['catn'])){
                                     <!-- Product Minimal-->
                                     <article class="product-minimal">
                                         <div class="unit unit-spacing-sm flex-column flex-md-row align-items-center">
-                                            <div class="unit-left"><a class="product-minimal-figure" href="single-product.html"><img src="images/product-mini-2-106x104.png" alt="" width="106" height="104" /></a></div>
+                                            <div class="unit-left"><a class="product-minimal-figure" href="single-product.html"><img src="../../../work/images/product-mini-2-106x104.png" alt="" width="106" height="104" /></a></div>
                                             <div class="unit-body">
                                                 <p class="product-minimal-title"><a href="single-product.html">Stacking Chair</a></p>
                                                 <p class="product-minimal-price">$30.00</p>
@@ -141,7 +141,7 @@ if(isset($_REQUEST['catn'])){
                                     <!-- Product Minimal-->
                                     <article class="product-minimal">
                                         <div class="unit unit-spacing-sm flex-column flex-md-row align-items-center">
-                                            <div class="unit-left"><a class="product-minimal-figure" href="single-product.html"><img src="images/product-mini-3-106x104.png" alt="" width="106" height="104" /></a></div>
+                                            <div class="unit-left"><a class="product-minimal-figure" href="single-product.html"><img src="../../../work/images/product-mini-3-106x104.png" alt="" width="106" height="104" /></a></div>
                                             <div class="unit-body">
                                                 <p class="product-minimal-title"><a href="single-product.html">Grey Club Chair</a></p>
                                                 <p class="product-minimal-price">$20.00</p>

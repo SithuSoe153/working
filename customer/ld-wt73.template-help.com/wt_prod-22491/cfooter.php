@@ -5,7 +5,7 @@
             <div class="row row-40 row-md-50 justify-content-xl-between">
                 <div class="col-sm-6 col-lg-4 col-xl-3 wow fadeInRight">
                     <div class="footer-classic-brand">
-                        <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark" src="images/new_new_word_removebg.png" alt="" width="105" height="44" /><img class="brand-logo-light" src="images/new_new_word_removebg.png" alt="" width="106" height="44" /></a>
+                        <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark" src="../../../work/images/new_new_word_removebg.png" alt="" width="105" height="44" /><img class="brand-logo-light" src="../../../work/images/new_new_word_removebg.png" alt="" width="106" height="44" /></a>
                     </div>
                     <ul class="list-schedule">
                         <li><span>Weekdays:</span><span>08:00am - 08:00pm</span></li>
@@ -76,7 +76,7 @@
                 </div>
                 <div class="col-md-auto order-md-1"><a href="privacy-policy.html">Privacy Policy</a></div>
                 <div class="col-md-auto">
-                    <div class="group-sm group-middle"><img src="images/payment-1-45x15.png" alt="" width="45" height="15" /><img src="images/payment-2-46x28.png" alt="" width="46" height="28" /><img src="images/payment-3-62x17.png" alt="" width="62" height="17" />
+                    <div class="group-sm group-middle"><img src="../../../work/images/payment-1-45x15.png" alt="" width="45" height="15" /><img src="../../../work/images/payment-2-46x28.png" alt="" width="46" height="28" /><img src="../../../work/images/payment-3-62x17.png" alt="" width="62" height="17" />
                     </div>
                 </div>
             </div>
