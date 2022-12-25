@@ -175,7 +175,7 @@ include('cheaderh.php');
                                 <div class="product-body">
                                     <div class="product-figure"><a href="single-product.php?productid=<?php echo $productid ?>"><img src="<?php echo $Image ?>" alt="" width="129" height="172" />
                                     </div>
-                                    <h5 class="product-title"><a href="single-product.html"><?php echo $productname ?></a></h5>
+                                    <h5 class="product-title"><a href="single-product.php?productid=<?php echo $productid ?>"><?php echo $productname ?></a></h5>
                                     <div class="product-price-wrap">
                                         <!-- <div class="product-price product-price-old"><?php echo $price ?> MMK</div> -->
                                         <div class="product-price"><?php echo $price ?> MMK</div>
@@ -183,7 +183,7 @@ include('cheaderh.php');
                                 </div>
                                 <!-- <span class="product-badge product-badge-sale">Sale</span> -->
                                 <div class="product-button-wrap">
-                                    <div class="product-button"><a class="btn btn-secondary btn-zakaria fl-bigmug-line-search74" href="single-product.html"></a></div>
+                                    <div class="product-button"><a class="btn btn-secondary btn-zakaria fl-bigmug-line-search74" href="single-product.php?productid=<?php echo $productid ?>"></a></div>
                                     <div class="product-button"><a class="btn btn-primary btn-zakaria fl-bigmug-line-shopping202" href="cart-page.html"></a></div>
                                 </div>
                             </article>
@@ -241,7 +241,7 @@ include('cheaderh.php');
                         </div>
                         <div class="thumbnail-classic-caption">
                             <div>
-                                <h5 class="thumbnail-classic-title"><a href="single-product.html">Sunshine
+                                <h5 class="thumbnail-classic-title"><a href="single-product.php?productid=<?php echo $productid ?>">Sunshine
                                         Restaurant</a></h5>
                                 <div class="thumbnail-classic-price">Decor</div>
                                 <div class="thumbnail-classic-button-wrap">
@@ -258,7 +258,7 @@ include('cheaderh.php');
                         </div>
                         <div class="thumbnail-classic-caption">
                             <div>
-                                <h5 class="thumbnail-classic-title"><a href="single-product.html">Quadro
+                                <h5 class="thumbnail-classic-title"><a href="single-product.php?productid=<?php echo $productid ?>">Quadro
                                         hotel</a></h5>
                                 <div class="thumbnail-classic-price">Furniture</div>
                                 <div class="thumbnail-classic-button-wrap">
@@ -275,7 +275,7 @@ include('cheaderh.php');
                         </div>
                         <div class="thumbnail-classic-caption">
                             <div>
-                                <h5 class="thumbnail-classic-title"><a href="single-product.html">u-Style
+                                <h5 class="thumbnail-classic-title"><a href="single-product.php?productid=<?php echo $productid ?>">u-Style
                                         Fashion House</a></h5>
                                 <div class="thumbnail-classic-price">Decor</div>
                                 <div class="thumbnail-classic-button-wrap">
@@ -292,7 +292,7 @@ include('cheaderh.php');
                         </div>
                         <div class="thumbnail-classic-caption">
                             <div>
-                                <h5 class="thumbnail-classic-title"><a href="single-product.html">Flash Cafe</a>
+                                <h5 class="thumbnail-classic-title"><a href="single-product.php?productid=<?php echo $productid ?>">Flash Cafe</a>
                                 </h5>
                                 <div class="thumbnail-classic-price">Furniture</div>
                                 <div class="thumbnail-classic-button-wrap">
@@ -309,7 +309,7 @@ include('cheaderh.php');
                         </div>
                         <div class="thumbnail-classic-caption">
                             <div>
-                                <h5 class="thumbnail-classic-title"><a href="single-product.html">New York
+                                <h5 class="thumbnail-classic-title"><a href="single-product.php?productid=<?php echo $productid ?>">New York
                                         Public Library</a></h5>
                                 <div class="thumbnail-classic-price">Decor</div>
                                 <div class="thumbnail-classic-button-wrap">
@@ -326,7 +326,7 @@ include('cheaderh.php');
                         </div>
                         <div class="thumbnail-classic-caption">
                             <div>
-                                <h5 class="thumbnail-classic-title"><a href="single-product.html">Q-Biz
+                                <h5 class="thumbnail-classic-title"><a href="single-product.php?productid=<?php echo $productid ?>">Q-Biz
                                         Coworking</a></h5>
                                 <div class="thumbnail-classic-price">Furniture</div>
                                 <div class="thumbnail-classic-button-wrap">
@@ -343,7 +343,7 @@ include('cheaderh.php');
                         </div>
                         <div class="thumbnail-classic-caption">
                             <div>
-                                <h5 class="thumbnail-classic-title"><a href="single-product.html">Monroe’s
+                                <h5 class="thumbnail-classic-title"><a href="single-product.php?productid=<?php echo $productid ?>">Monroe’s
                                         Bar</a></h5>
                                 <div class="thumbnail-classic-price">Decor</div>
                                 <div class="thumbnail-classic-button-wrap">

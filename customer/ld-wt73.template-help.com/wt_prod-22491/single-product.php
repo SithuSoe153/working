@@ -203,14 +203,14 @@ if (isset($_REQUEST['productid'])) {
                         <div class="product-body">
                             <div class="product-figure"><img src="../../../work/images/product-1-129x172.png" alt="" width="129" height="172" />
                             </div>
-                            <h5 class="product-title"><a href="single-product.html">Garden table</a></h5>
+                            <h5 class="product-title"><a href="single-product.php?productid=<?php echo $productid ?>">Garden table</a></h5>
                             <div class="product-price-wrap">
                                 <div class="product-price product-price-old">$30.00</div>
                                 <div class="product-price">$23.00</div>
                             </div>
                         </div><span class="product-badge product-badge-sale">Sale</span>
                         <div class="product-button-wrap">
-                            <div class="product-button"><a class="btn btn-secondary btn-zakaria fl-bigmug-line-search74" href="single-product.html"></a></div>
+                            <div class="product-button"><a class="btn btn-secondary btn-zakaria fl-bigmug-line-search74" href="single-product.php?productid=<?php echo $productid ?>"></a></div>
                             <div class="product-button"><a class="btn btn-primary btn-zakaria fl-bigmug-line-shopping202" href="cart-page.html"></a></div>
                         </div>
                     </article>
@@ -221,13 +221,13 @@ if (isset($_REQUEST['productid'])) {
                         <div class="product-body">
                             <div class="product-figure"><img src="../../../work/images/product-2-160x155.png" alt="" width="160" height="155" />
                             </div>
-                            <h5 class="product-title"><a href="single-product.html">Club Chair</a></h5>
+                            <h5 class="product-title"><a href="single-product.php?productid=<?php echo $productid ?>">Club Chair</a></h5>
                             <div class="product-price-wrap">
                                 <div class="product-price">$13.00</div>
                             </div>
                         </div><span class="product-badge product-badge-new">New</span>
                         <div class="product-button-wrap">
-                            <div class="product-button"><a class="btn btn-secondary btn-zakaria fl-bigmug-line-search74" href="single-product.html"></a></div>
+                            <div class="product-button"><a class="btn btn-secondary btn-zakaria fl-bigmug-line-search74" href="single-product.php?productid=<?php echo $productid ?>"></a></div>
                             <div class="product-button"><a class="btn btn-primary btn-zakaria fl-bigmug-line-shopping202" href="cart-page.html"></a></div>
                         </div>
                     </article>
@@ -238,13 +238,13 @@ if (isset($_REQUEST['productid'])) {
                         <div class="product-body">
                             <div class="product-figure"><img src="../../../work/images/product-3-132x173.png" alt="" width="132" height="173" />
                             </div>
-                            <h5 class="product-title"><a href="single-product.html">pendant lamp</a></h5>
+                            <h5 class="product-title"><a href="single-product.php?productid=<?php echo $productid ?>">pendant lamp</a></h5>
                             <div class="product-price-wrap">
                                 <div class="product-price">$17.00</div>
                             </div>
                         </div>
                         <div class="product-button-wrap">
-                            <div class="product-button"><a class="btn btn-secondary btn-zakaria fl-bigmug-line-search74" href="single-product.html"></a></div>
+                            <div class="product-button"><a class="btn btn-secondary btn-zakaria fl-bigmug-line-search74" href="single-product.php?productid=<?php echo $productid ?>"></a></div>
                             <div class="product-button"><a class="btn btn-primary btn-zakaria fl-bigmug-line-shopping202" href="cart-page.html"></a></div>
                         </div>
                     </article>
@@ -255,13 +255,13 @@ if (isset($_REQUEST['productid'])) {
                         <div class="product-body">
                             <div class="product-figure"><img src="../../../work/images/product-4-140x168.png" alt="" width="140" height="168" />
                             </div>
-                            <h5 class="product-title"><a href="single-product.html">Dark grey club chair</a></h5>
+                            <h5 class="product-title"><a href="single-product.php?productid=<?php echo $productid ?>">Dark grey club chair</a></h5>
                             <div class="product-price-wrap">
                                 <div class="product-price">$18.00</div>
                             </div>
                         </div>
                         <div class="product-button-wrap">
-                            <div class="product-button"><a class="btn btn-secondary btn-zakaria fl-bigmug-line-search74" href="single-product.html"></a></div>
+                            <div class="product-button"><a class="btn btn-secondary btn-zakaria fl-bigmug-line-search74" href="single-product.php?productid=<?php echo $productid ?>"></a></div>
                             <div class="product-button"><a class="btn btn-primary btn-zakaria fl-bigmug-line-shopping202" href="cart-page.html"></a></div>
                         </div>
                     </article>

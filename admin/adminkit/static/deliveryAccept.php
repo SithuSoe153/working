@@ -7,6 +7,6 @@ if (isset($_REQUEST['oid'])) {
 	if ($query) {
 		echo "<script>
 		alert('Order Confirm')
-		window.location='orderReport.php'</script>";
+		window.location='delivery.php'</script>";
 	}
 }

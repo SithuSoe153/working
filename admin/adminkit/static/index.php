@@ -212,7 +212,18 @@ if (isset($_SESSION['sid'])) {
 													</div>
 												</div>
 											</div>
-											<h1 class="mt-1 mb-3">64</h1>
+											<h1 class="mt-1 mb-3">
+												<?php
+
+												$select = "SELECT * FROM orders";
+												$query = mysqli_query($connection, $select);
+												$count = mysqli_num_rows($query);
+
+												echo $count;
+
+												?>
+
+											</h1>
 
 										</div>
 									</div>

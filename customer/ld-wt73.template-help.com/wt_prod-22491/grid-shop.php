@@ -116,9 +116,9 @@ include('cheaders.php');
                                     <!-- Product Minimal-->
                                     <article class="product-minimal">
                                         <div class="unit unit-spacing-sm flex-column flex-md-row align-items-center">
-                                            <div class="unit-left"><a class="product-minimal-figure" href="single-product.html"><img src="../../../work/images/product-mini-1-106x104.png" alt="" width="106" height="104" /></a></div>
+                                            <div class="unit-left"><a class="product-minimal-figure" href="single-product.php?productid=<?php echo $productid ?>"><img src="../../../work/images/product-mini-1-106x104.png" alt="" width="106" height="104" /></a></div>
                                             <div class="unit-body">
-                                                <p class="product-minimal-title"><a href="single-product.html">Table Lamp</a></p>
+                                                <p class="product-minimal-title"><a href="single-product.php">Table Lamp</a></p>
                                                 <p class="product-minimal-price">$25.00</p>
                                             </div>
                                         </div>
@@ -128,9 +128,9 @@ include('cheaders.php');
                                     <!-- Product Minimal-->
                                     <article class="product-minimal">
                                         <div class="unit unit-spacing-sm flex-column flex-md-row align-items-center">
-                                            <div class="unit-left"><a class="product-minimal-figure" href="single-product.html"><img src="../../../work/images/product-mini-2-106x104.png" alt="" width="106" height="104" /></a></div>
+                                            <div class="unit-left"><a class="product-minimal-figure" href="single-product.php"><img src="../../../work/images/product-mini-2-106x104.png" alt="" width="106" height="104" /></a></div>
                                             <div class="unit-body">
-                                                <p class="product-minimal-title"><a href="single-product.html">Stacking Chair</a></p>
+                                                <p class="product-minimal-title"><a href="single-product.php">Stacking Chair</a></p>
                                                 <p class="product-minimal-price">$30.00</p>
                                             </div>
                                         </div>
@@ -140,9 +140,9 @@ include('cheaders.php');
                                     <!-- Product Minimal-->
                                     <article class="product-minimal">
                                         <div class="unit unit-spacing-sm flex-column flex-md-row align-items-center">
-                                            <div class="unit-left"><a class="product-minimal-figure" href="single-product.html"><img src="../../../work/images/product-mini-3-106x104.png" alt="" width="106" height="104" /></a></div>
+                                            <div class="unit-left"><a class="product-minimal-figure" href="single-product.php?productid=<?php echo $productid ?>"><img src="../../../work/images/product-mini-3-106x104.png" alt="" width="106" height="104" /></a></div>
                                             <div class="unit-body">
-                                                <p class="product-minimal-title"><a href="single-product.html">Grey Club Chair</a></p>
+                                                <p class="product-minimal-title"><a href="single-product.php?productid=<?php echo $productid ?>">Grey Club Chair</a></p>
                                                 <p class="product-minimal-price">$20.00</p>
                                             </div>
                                         </div>
@@ -192,7 +192,7 @@ include('cheaders.php');
 
                                                     <div class="product-figure"><a href="single-product.php?productid=<?php echo $productid ?>"><img src="<?php echo $Image ?>" alt="" width="160" height="155" /></a>
                                                     </div>
-                                                    <h5 class="product-title"><a href="single-product.php"><?php echo $productname ?></a></h5>
+                                                    <h5 class="product-title"><a href="single-product.php?productid=<?php echo $productid ?>"><?php echo $productname ?></a></h5>
                                                     <div class="product-price-wrap">
                                                         <!-- <div class="product-price product-price-old"><?php echo $price ?> MMK</div> -->
                                                         <div class="product-price"><?php echo $price ?> MMK</div>
@@ -254,7 +254,7 @@ include('cheaders.php');
 
                                                     <div class="product-figure"><a href="single-product.php?productid=<?php echo $productid ?>"><img src="<?php echo $Image ?>" alt="" width="160" height="155" /></a>
                                                     </div>
-                                                    <h5 class="product-title"><a href="single-product.php"><?php echo $productname ?></a></h5>
+                                                    <h5 class="product-title"><a href="single-product.php?productid=<?php echo $productid ?>"><?php echo $productname ?></a></h5>
                                                     <div class="product-price-wrap">
                                                         <!-- <div class="product-price product-price-old"><?php echo $price ?> MMK</div> -->
                                                         <div class="product-price"><?php echo $price ?> MMK</div>
@@ -313,7 +313,7 @@ include('cheaders.php');
 
                                                     <div class="product-figure"><a href="single-product.php?productid=<?php echo $productid ?>"><img src="<?php echo $Image ?>" alt="" width="160" height="155" /></a>
                                                     </div>
-                                                    <h5 class="product-title"><a href="single-product.php"><?php echo $productname ?></a></h5>
+                                                    <h5 class="product-title"><a href="single-product.php?productid=<?php echo $productid ?>"><?php echo $productname ?></a></h5>
                                                     <div class="product-price-wrap">
                                                         <!-- <div class="product-price product-price-old"><?php echo $price ?> MMK</div> -->
                                                         <div class="product-price"><?php echo $price ?> MMK</div>

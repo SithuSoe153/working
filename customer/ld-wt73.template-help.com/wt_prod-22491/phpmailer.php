@@ -104,6 +104,11 @@ if (file_exists($file_checker)) {
         // echo $customerid;
     } catch (Exception $e) {
         echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+        echo "<script>alert('Message Could Not Send Due To Internet connection.')</script>";
+        echo "<script>alert('We will send you to the home page.')</script>";
+
+        echo "<script>window.location='../wt_prod-22491'</script>";
+
     }
     // }
 

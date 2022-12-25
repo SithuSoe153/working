@@ -49,15 +49,19 @@ if (isset($_POST['btnregister'])) {
 
     //////////////////////////////////Image/////////////////////////////////
 
+    $tet = $_FILES['cusprofile']['name'];
 
-
-    if (isset($_FILES['cusprofile']['name'])) {
+    if (!$tet) {
         $filename = $cusprofile;
-    } else {
+    } else{
+        echo "<script>alert('Change')</script>";
+
         $Image = $_FILES['cusprofile']['name'];
         $Folder = "../../../work/images/";
         $filename = $Folder . '_' . $Image;
         $image = copy($_FILES['cusprofile']['tmp_name'], $filename);
+
+
         if (!$image) {
             echo "<p>Cannot Upload  cus Profile</p>";
             exit();

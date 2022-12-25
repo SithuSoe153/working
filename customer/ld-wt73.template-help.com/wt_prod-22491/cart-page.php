@@ -96,7 +96,7 @@ if (isset($_GET['action'])) {
                             ?>
 
                                 <tr>
-                                    <td><a class="table-cart-figure" href="single-product.php?productid=<?php echo $productid ?>"><img src="<?php echo $image1 ?>" alt="" width="146" height="132" /></a><a class="table-cart-link" href="single-product.html"><?php echo $productname ?></a></td>
+                                    <td><a class="table-cart-figure" href="single-product.php?productid=<?php echo $productid ?>"><img src="<?php echo $image1 ?>" alt="" width="146" height="132" /></a><a class="table-cart-link" href="single-product.php?productid=<?php echo $productid ?>"><?php echo $productname ?></a></td>
                                     <td><?php echo $price ?> MMK</td>
                                     <td>
                                         <?php echo $quantity ?>
