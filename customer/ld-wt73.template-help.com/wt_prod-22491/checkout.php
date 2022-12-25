@@ -352,7 +352,7 @@ include('cfooter.php'); ?>
             ajax.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 
 
-            ajax.send("../../../work/imagesave=" + canvas.toDataURL("image/jpeg", 0.9));
+            ajax.send("imagesave=" + canvas.toDataURL("image/jpeg", 0.9));
 
             ajax.onreadystatechange = function() {
 

@@ -10,9 +10,17 @@ Supplier
 
 Raw
 
-Purchase
+Purchase (Raw)
 
 item
 
 production
+
+
+
+category
+
+sofas
+tables
+gaming chairs
 

@@ -62,17 +62,21 @@
                                         <!-- RD Navbar Dropdown -->
                                         <ul class="rd-menu rd-navbar-dropdown">
                                             <?php
-                                            for ($i = 0; $i < $count; $i++) {
+                                            if ($count > 0) {
                                                 # code...
 
-                                                $data = mysqli_fetch_array($query);
-                                                $categoryid = $data['categoryid'];
-                                                $categoryname = $data['categoryname'];
+                                                for ($i = 0; $i < $count; $i++) {
+                                                    # code...
 
-                                                echo "<li class='rd-dropdown-item'><a class='rd-dropdown-link' href='grid-shop.php?catid=$categoryid&&catn=$categoryname'>$categoryname</a></li>";
+                                                    $data = mysqli_fetch_array($query);
+                                                    $categoryid = $data['categoryid'];
+                                                    $categoryname = $data['categoryname'];
+
+                                                    echo "<li class='rd-dropdown-item'><a class='rd-dropdown-link' href='grid-shop.php?catid=$categoryid'>$categoryname</a></li>";
+                                                }
                                             }
-                                            ?>
 
+                                            ?>
 
                                         </ul>
 

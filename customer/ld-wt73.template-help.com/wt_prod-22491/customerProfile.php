@@ -53,8 +53,7 @@ if (isset($_POST['btnregister'])) {
 
     if (!$tet) {
         $filename = $cusprofile;
-    } else{
-        echo "<script>alert('Change')</script>";
+    } else {
 
         $Image = $_FILES['cusprofile']['name'];
         $Folder = "../../../work/images/";
@@ -120,28 +119,28 @@ if (isset($_POST['btnregister'])) {
                             <div class="m-sm-4">
 
                                 <div class="mb-3">
-                                    <label class="form-label">Name</label>
+                                    <label>Name</label>
                                     <input type="hidden" name="txtcusid" value="<?php echo $cusid ?>">
                                     <input class="form-control form-control-lg" type="text" name="txtcusname" required value="<?php echo $cusname ?>" />
                                 </div>
 
                                 <div class="mb-3">
-                                    <label class="form-label">Email Address</label>
+                                    <label>Email Address</label>
                                     <input class="form-control form-control-lg" type="text" name="txtcusemail" required value="<?php echo $cusemail ?>" />
                                 </div>
 
                                 <div class="mb-3">
-                                    <label class="form-label">Phone Number</label>
+                                    <label>Phone Number</label>
                                     <input class="form-control form-control-lg" type="text" name="txtcusphonenumber" required value="<?php echo $phonenumber ?>" />
                                 </div>
 
                                 <div class="mb-3">
-                                    <label class="form-label">Password</label>
+                                    <label>Password</label>
                                     <input class="form-control form-control-lg" type="text" name="txtcuspassword" required value="<?php echo $password ?>" />
                                 </div>
 
                                 <div class="mb-3">
-                                    <label class="form-label">Address</label>
+                                    <label>Address</label>
                                     <textarea name="txtcusaddress" class="form-control" rows="2">
 											<?php echo $address ?>
 											</textarea>
@@ -175,7 +174,7 @@ if (isset($_POST['btnregister'])) {
 
                                 <div class="text-center mt-3">
                                     <button name="btnregister" class="btn btn-lg btn-primary btn-zakaria" style="top: 15px;">Register</button>
-                                    <a href="../wt_prod-22491" class="btn btn-lg btn-primary btn-zakaria">Logout</a>
+                                    <a href="CLogOut.php" class="btn btn-lg btn-primary btn-zakaria">Logout</a>
                                 </div>
 
                                 <div class="text-center mt-3">

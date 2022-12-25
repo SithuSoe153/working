@@ -2,7 +2,7 @@
 include('connect.php');
 if (isset($_REQUEST['pid'])) {
 	$pid = $_REQUEST['pid'];
-	$Select = "Update purchase set purchasestatus='Conform' where purchaseid='$pid'";
+	$Select = "Update purchase set purchasestatus='confirm' where purchaseid='$pid'";
 	$query = mysqli_query($connection, $Select);
 	if ($query) {
 		echo "<script>

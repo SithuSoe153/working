@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 01, 2022 at 01:01 PM
+-- Generation Time: Dec 25, 2022 at 11:58 AM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 7.2.12
 
@@ -99,10 +99,11 @@ INSERT INTO `customer` (`
 customerid`,
 `customername
 `, `customerpassword`, `customeremail`, `customerphonenumber`, `customeraddress`, `customerprofile`) VALUES
-(32, 'oop', 'oop', 'oop@gmail.com', 'oop', '					oop				', 'images/_https___hypebeast.com_image_2021_06_brabus-900-rocket-edition-mercedes-amg-g63-g-wagon-tuned-custom-900hp-power-speed-0.jpg'),
-(34, 'Andrew edit', 'kmd', 'soe153appleid@gmail.com', '009', '					ygn				', 'images/_244333954_244200051056011_7250399859362412248_n.jpg'),
+(32, 'oop', 'oop', 'oop@gmail.com', 'oop', '					oop				', '../../../work/images/_https___hypebeast.com_image_2021_06_brabus-900-rocket-edition-mercedes-amg-g63-g-wagon-tuned-custom-900hp-power-speed-0.jpg'),
+(34, 'Andrew', 'kmd', 'sithu032001@gmai.com', '09857489887', '																						ygn					', '../../../work/images/_pro.jpg'),
 (35, 'fsdf', 'ssdf34', 'kljhafdasfdgjkj@gmali.com', '34243', 'sdf', 'images/_catcat.jpg'),
-(36, 'tset78', '89s', 'oo56p@gmail.com', '099', 'ygn', 'images/_catcat.jpg');
+(36, 'tset78', '89s', 'oo56p@gmail.com', '099', 'ygn', 'images/_catcat.jpg'),
+(37, 'ssssssssss', '789', '786@gmai.com', '988978', '797676', '../../../work/images/_pro.jpg');
 
 -- --------------------------------------------------------
 
@@ -135,7 +136,8 @@ deliveryID`,
 (6, 'Andrew', 'OR-000106', 'YGN', '0988'),
 (7, 'Andrew 001 ', 'OR-000107', 'YYGN', '0989898'),
 (8, 'Andrew89', 'OR-000108', '88', '88'),
-(9, 'Andrew56', 'OR-000109', '56', '56');
+(9, 'Andrew56', 'OR-000109', '56', '56'),
+(10, 'oop', 'OR-000110', '', '');
 
 -- --------------------------------------------------------
 
@@ -475,7 +477,8 @@ orderid`,
 ('OR-000106', 14, 500000, 1),
 ('OR-000107', 13, 200000, 8),
 ('OR-000108', 14, 500000, 1),
-('OR-000109', 14, 500000, 10);
+('OR-000109', 14, 500000, 10),
+('OR-000110', 14, 500000, 9);
 
 -- --------------------------------------------------------
 
@@ -510,7 +513,6 @@ INSERT INTO `orders` (`
 orderid`,
 `orderdate
 `, `customerid`, `totalamount`, `totalquantity`, `orderstatus`, `cardtype`, `Delivery`) VALUES
-('', '1970-01-01', 34, 500000, 1, 'Pending', 'ok', ''),
 ('OR-000001', '2022-01-22', 32, 170000, 1, 'confirm', 'Visa', ''),
 ('OR-000002', '2022-02-22', 32, 500000, 5, 'confirm', 'COD', ''),
 ('OR-000003', '2022-02-22', 32, 100000, 1, 'confirm', 'Visa', ''),
@@ -523,7 +525,7 @@ orderid`,
 ('OR-000010', '2021-02-12', 34, 850000, 9, 'Pending', 'COD', ''),
 ('OR-000011', '2022-04-12', 34, 850000, 9, 'Pending', 'COD', ''),
 ('OR-000012', '2022-05-12', 34, 850000, 9, 'Pending', 'COD', ''),
-('OR-000013', '2022-06-12', 34, 851000, 11, 'Pending', 'Visa', ''),
+('OR-000013', '2022-11-12', 34, 851000, 11, 'Pending', 'Visa', ''),
 ('OR-000014', '2022-02-12', 34, 851000, 11, 'Pending', 'Visa', ''),
 ('OR-000015', '2022-02-12', 34, 1351000, 13, 'Pending', 'Visa', ''),
 ('OR-000016', '2022-04-12', 34, 1352000, 15, 'Pending', 'Visa', ''),
@@ -539,8 +541,8 @@ orderid`,
 ('OR-000026', '2021-06-12', 34, 500000, 1, 'Pending', 'Visa', ''),
 ('OR-000027', '2022-05-12', 34, 500999, 2, 'Pending', 'Visa', ''),
 ('OR-000028', '2022-05-12', 34, 50000, 1, 'Pending', 'Visa', ''),
-('OR-000029', '2022-06-12', 34, 1800000, 6, 'Pending', 'Visa', ''),
-('OR-000030', '2022-06-12', 34, 1800000, 6, 'Pending', 'Visa', ''),
+('OR-000029', '2022-10-12', 34, 1800000, 6, 'Pending', 'Visa', ''),
+('OR-000030', '2022-11-12', 34, 1800000, 6, 'Pending', 'Visa', ''),
 ('OR-000031', '2021-07-12', 34, 50000, 1, 'Pending', 'Visa', ''),
 ('OR-000032', '2021-08-12', 34, 50000, 1, 'Pending', 'Visa', ''),
 ('OR-000033', '2022-05-12', 34, 1800000, 6, 'Pending', 'Visa', ''),
@@ -579,13 +581,13 @@ orderid`,
 ('OR-000066', '2022-06-12', 34, 350000, 2, 'Pending', 'Visa', ''),
 ('OR-000067', '2022-06-12', 34, 500000, 1, 'Pending', 'Visa', ''),
 ('OR-000068', '2022-06-12', 34, 500000, 1, 'Pending', 'Visa', ''),
-('OR-000069', '2022-06-12', 34, 700000, 3, 'Pending', 'Visa', ''),
+('OR-000069', '2022-11-12', 34, 700000, 3, 'Pending', 'Visa', ''),
 ('OR-000070', '2022-06-13', 34, 500000, 1, 'Pending', 'Visa', ''),
-('OR-000071', '2022-06-13', 34, 700000, 2, 'Pending', 'Visa', ''),
+('OR-000071', '2022-11-13', 34, 700000, 2, 'Pending', 'Visa', ''),
 ('OR-000072', '2022-06-13', 34, 300000, 1, 'Pending', 'Visa', ''),
-('OR-000073', '2022-06-13', 34, 770000, 7, 'Pending', 'Visa', ''),
+('OR-000073', '2022-11-13', 34, 770000, 7, 'Pending', 'Visa', ''),
 ('OR-000074', '2022-06-13', 34, 530000, 3, 'Pending', 'Visa', ''),
-('OR-000075', '2022-06-15', 34, 3100000, 17, 'Pending', 'Visa', ''),
+('OR-000075', '2022-09-15', 34, 3100000, 17, 'Pending', 'Visa', ''),
 ('OR-000076', '2022-06-15', 34, 300000, 1, 'Pending', 'Visa', ''),
 ('OR-000077', '2022-06-15', 34, 300000, 1, 'Pending', 'Visa', ''),
 ('OR-000078', '2022-06-15', 34, 500000, 1, 'Pending', 'Visa', ''),
@@ -593,33 +595,34 @@ orderid`,
 ('OR-000080', '2022-06-15', 34, 300000, 1, 'Pending', 'Visa', ''),
 ('OR-000081', '2022-06-15', 34, 130000, 1, 'Pending', 'Visa', ''),
 ('OR-000082', '2022-06-15', 34, 50000, 1, 'Pending', 'Visa', ''),
-('OR-000083', '2022-06-15', 34, 50000, 1, 'Pending', 'Visa', ''),
-('OR-000084', '2022-06-15', 34, 500000, 1, 'Pending', 'Visa', ''),
+('OR-000083', '2022-10-15', 34, 50000, 80, 'Pending', 'Visa', ''),
+('OR-000084', '2022-07-15', 34, 500000, 1, 'Pending', 'Visa', ''),
 ('OR-000085', '2022-06-15', 34, 500000, 1, 'Pending', 'Visa', ''),
 ('OR-000086', '2022-06-15', 34, 500000, 1, 'Pending', 'Visa', ''),
-('OR-000087', '2022-06-15', 34, 500000, 1, 'Pending', 'Visa', ''),
+('OR-000087', '2022-09-15', 34, 500000, 1, 'Pending', 'Visa', ''),
 ('OR-000088', '2022-06-15', 34, 500000, 1, 'Pending', 'Visa', ''),
 ('OR-000089', '2022-06-15', 34, 500000, 1, 'Pending', 'Visa', ''),
 ('OR-000090', '2022-06-15', 34, 500000, 1, 'Pending', 'Visa', ''),
-('OR-000091', '2022-06-15', 34, 300000, 1, 'Pending', 'Visa', ''),
+('OR-000091', '2022-11-15', 34, 300000, 11, 'Pending', 'Visa', ''),
 ('OR-000092', '2022-06-15', 34, 500000, 1, 'Pending', 'Visa', ''),
 ('OR-000093', '2022-06-15', 34, 500000, 1, 'Pending', 'Visa', ''),
-('OR-000094', '2022-06-15', 34, 500000, 1, 'Pending', 'Visa', ''),
-('OR-000095', '2022-06-15', 34, 600000, 2, 'Pending', 'ok', ''),
+('OR-000094', '2022-10-15', 34, 500000, 10, 'Pending', 'Visa', ''),
+('OR-000095', '2022-09-15', 34, 600000, 20, 'Pending', 'ok', ''),
 ('OR-000096', '2022-06-15', 34, 500000, 1, 'Pending', 'ok', ''),
-('OR-000097', '2022-06-15', 34, 500000, 1, 'Pending', 'ok', ''),
-('OR-000098', '2022-06-15', 34, 1050000, 3, 'Pending', 'Visa', ''),
+('OR-000097', '2022-10-15', 34, 500000, 50, 'Pending', 'ok', ''),
+('OR-000098', '2022-09-15', 34, 1050000, 3, 'Pending', 'Visa', ''),
 ('OR-000099', '2022-06-15', 34, 500000, 1, 'Pending', 'Visa', ''),
 ('OR-000100', '2022-06-15', 34, 300000, 1, 'Pending', '', ''),
 ('OR-000101', '2022-06-15', 34, 300000, 3, 'Pending', '', ''),
 ('OR-000102', '2022-06-15', 34, 100000, 1, 'Pending', '', ''),
 ('OR-000103', '2022-06-15', 34, 30000, 3, 'Pending', '', ''),
-('OR-000104', '2022-06-16', 34, 600000, 3, 'Pending', '', ''),
-('OR-000105', '2022-06-29', 34, 1500000, 3, 'Pending', 'AYA', ''),
-('OR-000106', '2022-06-29', 34, 500000, 1, 'confirm', 'AYA Bank', 'YES'),
-('OR-000107', '2022-06-29', 34, 1600000, 8, 'Pending', 'PayPal', 'YES'),
-('OR-000108', '2022-06-29', 34, 500000, 1, 'Pending', 'Cheque Payment', 'YES'),
-('OR-000109', '2022-06-29', 34, 5000000, 10, 'confirm', 'Cheque Payment', 'YES');
+('OR-000104', '2022-11-16', 34, 600000, 30, 'Pending', '', ''),
+('OR-000105', '2022-09-29', 34, 1500000, 3, 'Pending', 'AYA', ''),
+('OR-000106', '2022-09-29', 34, 500000, 1, 'confirm', 'AYA Bank', 'YES'),
+('OR-000107', '2022-08-29', 34, 1600000, 8, 'Pending', 'PayPal', 'YES'),
+('OR-000108', '2022-11-29', 34, 500000, 80, 'Pending', 'Cheque Payment', 'YES'),
+('OR-000109', '2022-07-29', 34, 5000000, 10, 'confirm', 'Cheque Payment', 'YES'),
+('OR-000110', '2022-12-19', 32, 4500000, 9, 'Pending', 'checkbox-1', 'YES');
 
 -- --------------------------------------------------------
 
@@ -654,16 +657,19 @@ INSERT INTO `product` (`
 productid`,
 `productname
 `, `categoryid`, `unitprice`, `unitquantity`, `productdescription`, `productprofile`, `3D`, `AR`) VALUES
-(12, 'Sofa Chair', 7, 170000, 50, 'Sofa Chair', 'images/_chair sofa.png', '', ''),
-(13, 'Gaming Chair', 7, 200000, 39, 'Gaming Chair', 'images/_chair.png', '', ''),
-(14, 'Sofa Lux', 8, 500000, 962, 'Sofa Luxury Chair', 'images/_Luxury-Designer-Contemporary-Leather-Italian-Sofa-1.jpg', '', ''),
-(15, 'Gaming Chair RGB', 7, 300000, 16, 'RGB Gaming Chair', 'images/_Gaming Chair RGB.jpg', '', ''),
-(16, 'Death Pool Gaming Chair', 7, 250000, 3, 'Edition Gaming Chair', 'images/_gaming chair.jpg', '', ''),
-(17, 'Wooden Chair Modern', 7, 50000, 7, 'Wooden Chair', 'images/_wooden chair modern.jpg', '', ''),
-(18, 'Modern Wooden Chair Oak', 7, 100000, 37, 'Oak Chair Modern', 'images/_modern wooden chair.jpg', '', ''),
-(19, 'Wooden Stylish Chair', 7, 120000, 0, 'Wooden Stylish', 'images/_stylish wooden chair.webp', '', ''),
-(20, 'Wooden Awsome Chair', 7, 130000, 8, 'Wooden Awsome', 'images/_awsome wooden chair.jpg', '', ''),
-(49, 'Test Chair 3D', 7, 10000, 0, 'Test', 'images/_cc.jpg', '3D/_01.glb', 'AR/_01.usdz');
+(12, 'Sofa Chair (Test Bracket)', 7, 170000, 50, 'Sofa Chair', '../../../work/images/_chair sofa.png', '', ''),
+(13, 'Gaming Chair', 7, 200000, 39, 'Gaming Chair', '../../../work/images/_chair.png', '', ''),
+(14, 'Sofa Lux', 8, 500000, 953, 'Sofa Luxury Chair', '../../../work/images/_Luxury-Designer-Contemporary-Leather-Italian-Sofa-1.jpg', '', ''),
+(15, 'Gaming Chair RGB', 7, 300000, 16, 'RGB Gaming Chair', '../../../work/images/_Gaming Chair RGB.jpg', '', ''),
+(16, 'Death Pool Gaming Chair', 7, 250000, 3, 'Edition Gaming Chair', '../../../work/images/_gaming chair.jpg', '', ''),
+(17, 'Wooden Chair Modern', 7, 50000, 7, 'Wooden Chair', '../../../work/images/_wooden chair modern.jpg', '', ''),
+(18, 'Modern Wooden Chair Oak', 7, 100000, 37, 'Oak Chair Modern', '../../../work/images/_modern wooden chair.jpg', '', ''),
+(19, 'Wooden Stylish Chair', 7, 120000, 0, 'Wooden Stylish', '../../../work/images/_stylish wooden chair.webp', '', ''),
+(20, 'Wooden Awsome Chair', 7, 130000, 8, 'Wooden Awsome', '../../../work/images/_awsome wooden chair.jpg', '', ''),
+(49, 'Test Chair 3D', 7, 10000, 0, 'Test', '../../../work/images/_cc.jpg', '../../../work/3D/_01.glb', 'AR/_01.usdz'),
+(50, 'Test', 8, 90, 0, 'ds', '../../../work/images/_Screenshot from 2022-12-03 15-05-37.png', '3D/__01.glb', 'AR/__01.usdz'),
+(54, 'TestTest', 7, 90, 0, '90', '../../../work/images/_test.jpg', '', ''),
+(55, 'testtesttest', 7, 90, 0, 'io', '../../../work/images/_pro.jpg', '', '');
 
 -- --------------------------------------------------------
 
@@ -940,7 +946,8 @@ rawid`,
 `, `rawdes`, `rawtp`, `rawqtyleft`, `rawprofile`) VALUES
 (17, 'Teak', 'Wood', 112692, 90, 'images/__3.jpg'),
 (18, 'Padauk', 'Wood', 10317, -40, 'images/__5410165.jpg'),
-(19, 'testtest', 'testtest', 1000, 0, 'images/__5410165.jpg');
+(19, 'testtest', 'testtest', 1000, 0, 'images/__5410165.jpg'),
+(20, 'Oak', 'New prod to make oak furn', 12000, 0, 'images/_new_new_word_removebg.png');
 
 -- --------------------------------------------------------
 
@@ -977,10 +984,10 @@ INSERT INTO `staff` (`
 staffid`,
 `staffname
 `, `staffemail`, `password`, `phonenumber`, `address`, `staffrole`, `staffskill`, `staffprofile`) VALUES
-(45, 'Andrew staff', 'andrew@gmail.com', 'andrew', 'oop', 'Yangon, Tarmwe, Myanmar.', 'Sales Manager', 'Sales, Management , Casher', 'images/_2.jpg'),
-(46, 'Tom edit', 'tom@gmail.com', 'tom', '009', '																																																																		 Yangon 																										', 'Staff Manager', 'HTML, Java, C++', 'images/_243331689_244200037722679_4809425692561492596_n.jpg'),
-(50, 'Deli man', 'deliman@gmail.com', 'deliman', '09457825664', 'YGN, Pyay Road.', 'Delivery', 'Driving, Delivery Process', 'images/_3.jpg'),
-(53, 'Dummy Staff', 'dummystaff@gmail.com', 'dummystaff123', '09876543223', 'MDY, 23x34 road', 'Staff', 'Sales, Casher', 'images/_274221186_4214469081989220_4115262161069774631_n.jpg');
+(45, 'Andrew staff', 'andrew@gmail.com', 'andrew', 'oop', 'Yangon, Tarmwe, Myanmar.', 'Sales Manager', 'Sales, Management , Casher', '../../../work/images/_2.jpg'),
+(46, 'Tom edit', 'tom@gmail.com', 'tom', '009', '																																																																		 Yangon 																										', 'Staff Manager', 'HTML, Java, C++', '../../../work/images/_243331689_244200037722679_4809425692561492596_n.jpg'),
+(50, 'Deli man', 'deliman@gmail.com', 'deliman', '09457825664', 'YGN, Pyay Road.', 'Delivery', 'Driving, Delivery Process', '../../../work/images/_3.jpg'),
+(53, 'Dummy Staff', 'dummystaff@gmail.com', 'dummystaff123', '09876543223', 'MDY, 23x34 road', 'Staff', 'Sales, Casher', '../../../work/images/_274221186_4214469081989220_4115262161069774631_n.jpg');
 
 -- --------------------------------------------------------
 
@@ -1133,14 +1140,14 @@ ALTER TABLE `comments`
 --
 ALTER TABLE `customer`
   MODIFY `customerid` int
-(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
+(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
 
 --
 -- AUTO_INCREMENT for table `delivery`
 --
 ALTER TABLE `delivery`
   MODIFY `deliveryID` int
-(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `item`
@@ -1161,14 +1168,14 @@ ALTER TABLE `message`
 --
 ALTER TABLE `product`
   MODIFY `productid` int
-(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
+(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
 
 --
 -- AUTO_INCREMENT for table `raw`
 --
 ALTER TABLE `raw`
   MODIFY `rawid` int
-(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT for table `staff`

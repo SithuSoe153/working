@@ -108,7 +108,6 @@ if (file_exists($file_checker)) {
         echo "<script>alert('We will send you to the home page.')</script>";
 
         echo "<script>window.location='../wt_prod-22491'</script>";
-
     }
     // }
 
