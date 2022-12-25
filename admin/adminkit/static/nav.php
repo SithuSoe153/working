@@ -77,7 +77,7 @@ if (isset($_SESSION['sid'])) {
                     <a class="dropdown-item" href="staffUpdate.php"><i class="align-middle me-1" data-feather="pie-chart"></i> Update Profile</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="index.php"><i class="align-middle me-1" data-feather="settings"></i> Settings & Privacy</a>
-                    <a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="help-circle"></i> Help Center</a>
+
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="staffLogin.php">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out align-middle me-2">

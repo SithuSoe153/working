@@ -8,7 +8,7 @@ error_reporting(E_ALL);
 $profilephpans = "active";
 include('connect.php');
 include('sheader.php');
-include('function_test.php');
+include('img_fun.php');
 
 
 if (isset($_SESSION['sid'])) {
