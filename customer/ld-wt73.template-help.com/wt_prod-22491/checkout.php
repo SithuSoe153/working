@@ -82,7 +82,7 @@ if (isset($_POST['btnCheckout'])) {
 <form action="checkout.php" method="POST">
 
     <section class="breadcrumbs-custom">
-        <div class="parallax-container" data-parallax-img="images/bg-about.jpg">
+        <div class="parallax-container" data-parallax-img="../../../work/images/bg-about.jpg">
             <div class="breadcrumbs-custom-body parallax-content context-dark">
                 <div class="container">
                     <h2 class="breadcrumbs-custom-title">Checkout</h2>
@@ -149,13 +149,6 @@ if (isset($_POST['btnCheckout'])) {
                                         </div>
                                     </div>
 
-                                    <!-- <div class="col-sm-6">
-                                <div class="form-wrap">
-                                    <input class="form-input" id="checkout-email-2" type="email" name="email" data-constraints="@Email @Required" />
-                                    <label class="form-label" for="checkout-email-2">E-Mail</label>
-                                </div>
-                            </div> -->
-
                                     <div class="col-sm-6">
                                         <div class="form-wrap">
                                             <input class="form-input" id="checkout-phone-2" type="text" name="cusPhone" data-constraints="@Numeric" />
@@ -171,19 +164,6 @@ if (isset($_POST['btnCheckout'])) {
                         <div class="col-md-10 col-lg-6">
                             <h3 class="fw-medium">Payment methods</h3>
                             <div class="box-radio">
-
-
-
-                                <!-- <input onclick="document.getElementById('extra1').style.visibility='visible';document.getElementById('extra2').style.visibility='visible';" type="radio" />Apple
-
-                        <input type="radio" id="extra1" style="visibility:hidden" other choice here />
-
-                        <input type="radio" id="extra2" style="visibility:hidden" other choice here /> -->
-
-
-
-
-
                                 <div class="radio-panel">
                                     <label class="radio-inline">
                                         <input name="input-group-radio" value="Direct Bank Transfer" type="radio" required onclick="document.getElementById('extra1').style.visibility='visible';document.getElementById('extra2').style.visibility='visible';">Direct Bank Transfer
@@ -254,29 +234,22 @@ if (isset($_POST['btnCheckout'])) {
                                 ?>
 
                                     <tr>
-                                        <td><a class="table-cart-figure" href="single-product.html"><img src="<?php echo $image1 ?>" alt="" width="146" height="132" /></a><a class="table-cart-link" href="single-product.html"><?php echo $productname ?></a></td>
+                                        <td><a class="table-cart-figure" href="single-product.php?productid=<?php echo $productid ?>"><img src="<?php echo $image1 ?>" alt="" width="146" height="132" /></a><a class="table-cart-link" href="single-product.php?productid=<?php echo $productid ?>"><?php echo $productname ?></a></td>
                                         <td><?php echo $price ?> MMK</td>
                                         <td>
                                             <?php echo $quantity ?>
-                                            <!-- <div class="table-cart-stepper">
-                                <input class="form-input" type="number" data-zeros="true" value="1" min="1" max="1000">
-                            </div> -->
+
                                         </td>
                                         <td><?php echo $Subtotal ?> MMK</td>
-                                        <!-- <td><a href='cart-page.php?action=remove&productid=$productid' style='color:red'>Remove</a></td> -->
                                     </tr>
 
                                 <?php
                                 }
                                 ?>
 
-
-
                             </tbody>
                         </table>
                     </div>
-
-
 
                     <!-- Cart Total -->
 

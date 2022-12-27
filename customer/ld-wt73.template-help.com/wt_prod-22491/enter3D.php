@@ -15,18 +15,10 @@ if (isset($_REQUEST['productid'])) {
     $ret = mysqli_query($connection, $query);
     $arr = mysqli_fetch_array($ret);
 
-    // $productid = $arr['productid'];
-    // $productname = $arr['productname'];
-    // $unitprice = $arr['unitprice'];
-    // $quantity = $arr['unitquantity'];
-    // $categoryname = $arr['categoryname'];
-    // $image1 = $arr['productprofile'];
-
     $product3D =  $arr['3D'];
     $productAR =  $arr['AR'];
 } else {
     echo "<script>window.location='index.php'</script>";
-    // echo "<script>window.location='enter3D.php'</script>";
 }
 
 ?>
@@ -68,7 +60,7 @@ if (isset($_REQUEST['productid'])) {
 
 <body>
     <div class="box">
-        <model-viewer src="<?php echo $product3D ?>" ios-src="<?php echo $productAR ?>" poster="images/cubeloader2.2.gif" camera-controls auto-rotate ar disable-zoom loading="eager">
+        <model-viewer src="<?php echo $product3D ?>" ios-src="<?php echo $productAR ?>" poster="../../../work/images/cubeloader2.2.gif" camera-controls auto-rotate ar disable-zoom loading="eager">
 
             <a href="enter3D.php?productid=<?php echo $_REQUEST['productid'] ?>">
 
@@ -79,8 +71,6 @@ if (isset($_REQUEST['productid'])) {
             </a>
 
         </model-viewer>
-
-
 
     </div>
 </body>

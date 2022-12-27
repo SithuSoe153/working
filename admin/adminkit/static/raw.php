@@ -6,7 +6,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 $rawphpans = "active";
-include('../../connect.php');
+include('connect.php');
 include('sheader.php');
 
 if (isset($_SESSION['sid'])) {
@@ -29,23 +29,29 @@ if (isset($_SESSION['sid'])) {
 	}
 }
 
+//////////////////////////////////Image/////////////////////////////////
 
 if (isset($_POST['btnregister'])) {
 	$rawtype = $_POST['rawtype'];
 	$rawdes = $_POST['rawdes'];
 	$rawtp = $_POST['rawtp'];
 	$rawqtyleft = 0;
-
-	//////////////////////////////////Image/////////////////////////////////
-
+	
+	if (!$_FILES['rawprofile']['name']) {
+	# code...
+$filename = "";
+}else {
+	# code...
 	$Image = $_FILES['rawprofile']['name'];
-	$Folder = "images/";
+	$Folder = "../../../work/images/";
 	$filename = $Folder . '_' . $Image;
 	$image = copy($_FILES['rawprofile']['tmp_name'], $filename);
 	if (!$image) {
 		echo "<p>Cannot Upload  Raw Profile</p>";
 		exit();
 	}
+}
+
 
 	/////////////////////////////////////////////////////////////////////////
 
@@ -123,7 +129,7 @@ if (isset($_POST['btnregister'])) {
 												<div class="mb-3" id="selectedBanner" style="margin-left: 52%;margin-bottom: 52%"></div>
 												<div class="form-control form-control-lg">
 													<div id="forfile">
-														<input name="rawprofile" class="img" id="file" type="file" accept="image/*" />
+														<input name="rawprofile" class="img" id="file" type="file" accept="image/*"/>
 														<label for="file">
 															<i class="fa fa-image"></i> &nbsp
 															Choose Picture

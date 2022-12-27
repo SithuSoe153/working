@@ -6,7 +6,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 $indexphpans = "active";
-include('../../connect.php');
+include('connect.php');
 include('sheader.php');
 
 if (!isset($_SESSION['sid'])) {
@@ -212,7 +212,18 @@ if (isset($_SESSION['sid'])) {
 													</div>
 												</div>
 											</div>
-											<h1 class="mt-1 mb-3">64</h1>
+											<h1 class="mt-1 mb-3">
+												<?php
+
+												$select = "SELECT * FROM orders";
+												$query = mysqli_query($connection, $select);
+												$count = mysqli_num_rows($query);
+
+												echo $count;
+
+												?>
+
+											</h1>
 
 										</div>
 									</div>
@@ -409,7 +420,7 @@ include('sfooter.php');
 
 	// jan
 	$jan = "SELECT * FROM orders Where orderdate BETWEEN '2022-01-01' AND '2022-01-31'";
-	$janquery = mysqli_query($con, $jan);
+	$janquery = mysqli_query($connection, $jan);
 	$jancount = mysqli_num_rows($janquery);
 	$jantotalamount = 0;
 
@@ -425,7 +436,7 @@ include('sfooter.php');
 
 	// feb
 	$feb = "SELECT * FROM orders Where orderdate BETWEEN '2022-02-01' AND '2022-02-28'";
-	$febquery = mysqli_query($con, $feb);
+	$febquery = mysqli_query($connection, $feb);
 	$febcount = mysqli_num_rows($febquery);
 
 	if ($febcount > 0) {
@@ -441,7 +452,7 @@ include('sfooter.php');
 
 	// march
 	$march = "SELECT * FROM orders Where orderdate BETWEEN '2022-3-01' AND '2022-03-31'";
-	$marchquery = mysqli_query($con, $march);
+	$marchquery = mysqli_query($connection, $march);
 	$marchcount = mysqli_num_rows($marchquery);
 	$marchtotalamount = 0;
 
@@ -457,7 +468,7 @@ include('sfooter.php');
 
 	// april
 	$april = "SELECT * FROM orders Where orderdate BETWEEN '2022-04-01' AND '2022-04-29'";
-	$aprilquery = mysqli_query($con, $april);
+	$aprilquery = mysqli_query($connection, $april);
 	$aprilcount = mysqli_num_rows($aprilquery);
 	$apriltotalamount = 0;
 
@@ -473,7 +484,7 @@ include('sfooter.php');
 
 	// may
 	$may = "SELECT * FROM orders Where orderdate BETWEEN '2022-05-01' AND '2022-05-30'";
-	$mayquery = mysqli_query($con, $may);
+	$mayquery = mysqli_query($connection, $may);
 	$maycount = mysqli_num_rows($mayquery);
 	$maytotalamount = 0;
 
@@ -489,7 +500,7 @@ include('sfooter.php');
 
 	// june
 	$june = "SELECT * FROM orders Where orderdate BETWEEN '2022-06-01' AND '2022-06-30'";
-	$junequery = mysqli_query($con, $june);
+	$junequery = mysqli_query($connection, $june);
 	$junecount = mysqli_num_rows($junequery);
 	$junetotalamount = 0;
 
@@ -505,7 +516,7 @@ include('sfooter.php');
 
 	// july
 	$july = "SELECT * FROM orders Where orderdate BETWEEN '2022-07-01' AND '2022-07-29'";
-	$julyquery = mysqli_query($con, $july);
+	$julyquery = mysqli_query($connection, $july);
 	$julycount = mysqli_num_rows($julyquery);
 	$julytotalamount = 0;
 
@@ -521,7 +532,7 @@ include('sfooter.php');
 
 	// august
 	$august = "SELECT * FROM orders Where orderdate BETWEEN '2022-07-01' AND '2022-07-31'";
-	$augustquery = mysqli_query($con, $august);
+	$augustquery = mysqli_query($connection, $august);
 	$augustcount = mysqli_num_rows($augustquery);
 	$augusttotalamount = 0;
 
@@ -537,7 +548,7 @@ include('sfooter.php');
 
 	// september
 	$september = "SELECT * FROM orders Where orderdate BETWEEN '2022-09-01' AND '2022-09-30'";
-	$septemberquery = mysqli_query($con, $september);
+	$septemberquery = mysqli_query($connection, $september);
 	$septembercount = mysqli_num_rows($septemberquery);
 	$septembertotalamount = 0;
 
@@ -553,7 +564,7 @@ include('sfooter.php');
 
 	// october
 	$october = "SELECT * FROM orders Where orderdate BETWEEN '2022-10-01' AND '2022-10-31'";
-	$octoberquery = mysqli_query($con, $october);
+	$octoberquery = mysqli_query($connection, $october);
 	$octobercount = mysqli_num_rows($octoberquery);
 	$octobertotalamount = 0;
 
@@ -569,7 +580,7 @@ include('sfooter.php');
 
 	// november
 	$november = "SELECT * FROM orders Where orderdate BETWEEN '2022-11-01' AND '2022-11-30'";
-	$novemberquery = mysqli_query($con, $november);
+	$novemberquery = mysqli_query($connection, $november);
 	$novembercount = mysqli_num_rows($novemberquery);
 	$novembertotalamount = 0;
 
@@ -585,7 +596,7 @@ include('sfooter.php');
 
 	// december
 	$december = "SELECT * FROM orders Where orderdate BETWEEN '2022-12-01' AND '2022-12-31'";
-	$decemberquery = mysqli_query($con, $december);
+	$decemberquery = mysqli_query($connection, $december);
 	$decembercount = mysqli_num_rows($decemberquery);
 	$decembertotalamount = 0;
 

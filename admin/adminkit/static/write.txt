@@ -1,0 +1,26 @@
+Customer
+
+Admin
+
+category
+
+Product
+
+Supplier
+
+Raw
+
+Purchase (Raw)
+
+item
+
+production
+
+
+
+category
+
+sofas
+tables
+gaming chairs
+

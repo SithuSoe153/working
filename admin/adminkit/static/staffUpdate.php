@@ -6,7 +6,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 $profilephpans = "active";
-include('../../connect.php');
+include('connect.php');
 include('sheader.php');
 
 if (isset($_SESSION['sid'])) {
@@ -42,15 +42,22 @@ if (isset($_POST['btnregister'])) {
 
 	//////////////////////////////////Image/////////////////////////////////
 
+	$tet = $_FILES['staffprofile']['name'];
 
-	$Image = $_FILES['staffprofile']['name'];
-	$Folder = "images/";
-	$filename = $Folder . '_' . $Image;
-	$image = copy($_FILES['staffprofile']['tmp_name'], $filename);
-	if (!$image) {
-		echo "<p>Cannot Upload  staff Profile</p>";
-		exit();
-	}
+    if (!$tet) {
+        $filename = $staffprofile;
+    } else{
+        $Image = $_FILES['staffprofile']['name'];
+        $Folder = "../../../work/images/";
+        $filename = $Folder . '_' . $Image;
+        $image = copy($_FILES['staffprofile']['tmp_name'], $filename);
+
+        if (!$image) {
+            echo "<p>Cannot Upload  Staff Profile</p>";
+            exit();
+        }
+    }
+
 
 	/////////////////////////////////////////////////////////////////////////
 

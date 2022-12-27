@@ -6,9 +6,9 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 $profilephpans = "active";
-include('../../connect.php');
+include('connect.php');
 include('sheader.php');
-include('function_test.php');
+include('img_fun.php');
 
 
 if (isset($_SESSION['sid'])) {
@@ -45,9 +45,8 @@ if (isset($_POST['btnregister'])) {
 	//////////////////////////////////Image/////////////////////////////////
 
 
-image(staffname,images/,Cannot Upload  Staff Profile);
 
-	
+
 
 	/////////////////////////////////////////////////////////////////////////
 

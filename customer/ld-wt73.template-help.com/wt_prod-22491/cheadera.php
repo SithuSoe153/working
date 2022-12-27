@@ -2,12 +2,12 @@
 <html class="wide wow-animation" lang="en">
 
 <head>
-    <title>Account</title>
+    <title>SHOP</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <script src="/cdn-cgi/apps/head/3ts2ksMwXvKRuG480KNifJ2_JNM.js"></script>
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700%7CLato%7CKalam:300,400,700">
 
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
@@ -38,7 +38,7 @@
                                 <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
                                 <!-- RD Navbar Brand-->
                                 <div class="rd-navbar-brand">
-                                    <!--Brand--><a class="brand" href="../wt_prod-22491"><img class="brand-logo-dark" src="images/new_new_word.png" alt="" width="105" height="44" /><img class="brand-logo-light" src="images/logo-inverse-212x88.png" alt="" width="106" height="44" /></a>
+                                    <!--Brand--><a class="brand" href="../wt_prod-22491"><img class="brand-logo-dark" src="../../../work/images/new_new_word.png" alt="" width="105" height="44" /><img class="brand-logo-light" src="../../../work/images/logo-inverse-212x88.png" alt="" width="106" height="44" /></a>
                                 </div>
                             </div>
                             <div class="rd-navbar-nav-wrap">
@@ -47,59 +47,43 @@
                                     <li class="rd-nav-item"><a class="rd-nav-link" href="../wt_prod-22491">Home</a>
                                     </li>
 
-                                    <!-- 
 
-                                        
-                                        <li class="rd-nav-item"><a class="rd-nav-link" href="#">Pages</a>
-                                        RD Navbar Dropdown
-                                        <ul class="rd-menu rd-navbar-dropdown">
-                                            <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="about-us.html">About Us</a></li>
-                                            <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="what-we-offer.html">What We Offer</a></li>
-                                            <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="our-team.html">Our Team</a></li>
-                                            <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="testimonials.html">Testimonials</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="rd-nav-item"><a class="rd-nav-link" href="grid-blog.html">Blog</a>
-                                    RD Navbar Dropdown
-                                    <ul class="rd-menu rd-navbar-dropdown">
-                                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="grid-blog.html">Grid Blog</a></li>
-                                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="blog-list.html">Blog List</a></li>
-                                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="blog-post.html">Blog Post</a></li>
-                                    </ul>
-                                </li>
-                                
-                                    <li class="rd-nav-item"><a class="rd-nav-link" href="grid-gallery.html">Gallery</a>
-                                        RD Navbar Dropdown
-                                    <ul class="rd-menu rd-navbar-dropdown">
-                                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="grid-gallery.html">Grid Gallery</a></li>
-                                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="grid-fullwidth-gallery.html">Grid Fullwidth Gallery</a></li>
-                                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="masonry-gallery.html">Masonry Gallery</a></li>
-                                    </ul>
-                                    </li>
+                                    <?php
 
-                                    -->
+                                    include('connect.php');
+
+                                    $select = "SELECT * from category";
+                                    $query = mysqli_query($connection, $select);
+                                    $count = mysqli_num_rows($query);
+
+                                    ?>
 
                                     <li class="rd-nav-item"><a class="rd-nav-link" href="grid-shop.php">Shop</a>
                                         <!-- RD Navbar Dropdown -->
-                                        <!-- <ul class="rd-menu rd-navbar-dropdown">
-                                            <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="grid-shop.php">Grid Shop</a></li>
-                                            <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="shop-list.php">Shop List</a></li>
-                                            <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="single-product.html">Single Product</a></li>
-                                            <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="cart-page.html">Cart Page</a></li>
-                                            <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="checkout.html">Checkout</a></li>
-                                        </ul> -->
+                                        <ul class="rd-menu rd-navbar-dropdown">
+                                            <?php
+                                            if ($count > 0) {
+                                                # code...
+
+                                                for ($i = 0; $i < $count; $i++) {
+                                                    # code...
+
+                                                    $data = mysqli_fetch_array($query);
+                                                    $categoryid = $data['categoryid'];
+                                                    $categoryname = $data['categoryname'];
+
+                                                    echo "<li class='rd-dropdown-item'><a class='rd-dropdown-link' href='grid-shop.php?catid=$categoryid'>$categoryname</a></li>";
+                                                }
+                                            }
+
+                                            ?>
+
+                                        </ul>
+
                                     </li>
 
-                                    <li class="rd-nav-item active"><a class="rd-nav-link" href="accountchoose.php">Account</a>
-                                        <!-- RD Navbar Dropdown -->
-                                        <!-- <ul class="rd-menu rd-navbar-dropdown">
-                                            <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="grid-shop.php">Grid Shop</a></li>
-                                            <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="shop-list.php">Shop List</a></li>
-                                            <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="single-product.html">Single Product</a></li>
-                                            <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="cart-page.html">Cart Page</a></li>
-                                            <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="checkout.html">Checkout</a></li>
-                                        </ul> -->
-                                    </li>
+                                    <li class="rd-nav-item active"><a class="rd-nav-link" href="customerProfile.php">Account</a>
+
 
                                 </ul>
                             </div>
@@ -144,7 +128,7 @@
                                     <div>
                                         <div>
                                             <!-- Owl Carousel-->
-                                            <div class="owl-carousel" data-items="1" data-dots="true" data-autoplay="true"><img src="images/about-5-350x269.jpg" alt="" width="350" height="269" /><img src="images/about-6-350x269.jpg" alt="" width="350" height="269" /><img src="images/about-7-350x269.jpg" alt="" width="350" height="269" />
+                                            <div class="owl-carousel" data-items="1" data-dots="true" data-autoplay="true"><img src="/about-5-350x269.jpg" alt="" width="350" height="269" /><img src="/about-6-350x269.jpg" alt="" width="350" height="269" /><img src="/about-7-350x269.jpg" alt="" width="350" height="269" />
                                             </div>
                                             <ul class="contacts-modern">
                                                 <li><a href="#">523 Sylvan Ave, 5th Floor<br>Mountain View, CA 94041

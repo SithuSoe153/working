@@ -18,7 +18,7 @@ $imagesave = str_replace(" ", "+", $imagesave);
 $imagesave = base64_decode($imagesave);
 
 // Save the image as filename.jpeg
-file_put_contents("images/captureimage.jpeg", $imagesave);
+file_put_contents("../../../work/images/captureimage.jpeg", $imagesave);
 
 // Sending response back to client
 echo "Done";

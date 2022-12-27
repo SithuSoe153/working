@@ -5,7 +5,7 @@
             <div class="row row-40 row-md-50 justify-content-xl-between">
                 <div class="col-sm-6 col-lg-4 col-xl-3 wow fadeInRight">
                     <div class="footer-classic-brand">
-                        <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark" src="images/logo-default-210x88.png" alt="" width="105" height="44" /><img class="brand-logo-light" src="images/logo-inverse-212x88.png" alt="" width="106" height="44" /></a>
+                        <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark" src="../../../work/images/new_new_word_removebg.png" alt="" width="105" height="44" /><img class="brand-logo-light" src="../../../work/images/new_new_word_removebg.png" alt="" width="106" height="44" /></a>
                     </div>
                     <ul class="list-schedule">
                         <li><span>Weekdays:</span><span>08:00am - 08:00pm</span></li>
@@ -31,20 +31,20 @@
                         <li>
                             <div class="unit unit-spacing-sm flex-column flex-md-row">
                                 <div class="unit-left"><span class="icon mdi mdi-map-marker"></span></div>
-                                <div class="unit-body"><a href="#">523 Sylvan Ave, 5th Floor<br />Mountain View,
-                                        CA 94041 USA</a></div>
+                                <div class="unit-body"><a href="#">No.23(B), 166st short<br />Tarmwe,
+                                        Yangon Myanmar</a></div>
                             </div>
                         </li>
                         <li>
                             <div class="unit unit-spacing-sm flex-column flex-md-row">
                                 <div class="unit-left"><span class="icon mdi mdi-phone"></span></div>
-                                <div class="unit-body"><a href="tel:#">+1 (844) 123 456 78</a></div>
+                                <div class="unit-body"><a href="tel:#">+95 995 142 3330</a></div>
                             </div>
                         </li>
                         <li>
                             <div class="unit unit-spacing-sm flex-column flex-md-row">
                                 <div class="unit-left"><span class="icon mdi mdi-email-outline"></span></div>
-                                <div class="unit-body"><a href="mailto:#">info@demolink.org</a></div>
+                                <div class="unit-body"><a href="mailto:#">sithu032001@gmail.com</a></div>
                             </div>
                         </li>
                     </ul>
@@ -71,12 +71,12 @@
         <div class="container">
             <div class="row row-10 align-items-center justify-content-sm-between">
                 <div class="col-md-auto">
-                    <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>Sofa</span><span>.&nbsp; All
+                    <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>BetterBuild</span><span>.&nbsp; All
                             rights reserved</span></p>
                 </div>
                 <div class="col-md-auto order-md-1"><a href="privacy-policy.html">Privacy Policy</a></div>
                 <div class="col-md-auto">
-                    <div class="group-sm group-middle"><img src="images/payment-1-45x15.png" alt="" width="45" height="15" /><img src="images/payment-2-46x28.png" alt="" width="46" height="28" /><img src="images/payment-3-62x17.png" alt="" width="62" height="17" />
+                    <div class="group-sm group-middle"><img src="../../../work/images/payment-1-45x15.png" alt="" width="45" height="15" /><img src="../../../work/images/payment-2-46x28.png" alt="" width="46" height="28" /><img src="../../../work/images/payment-3-62x17.png" alt="" width="62" height="17" />
                     </div>
                 </div>
             </div>

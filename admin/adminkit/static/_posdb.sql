@@ -7,10 +7,13 @@
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 7.2.12
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
+SET SQL_MODE
+= "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT
+= 0;
 START TRANSACTION;
-SET time_zone = "+00:00";
+SET time_zone
+= "+00:00";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -28,16 +31,22 @@ SET time_zone = "+00:00";
 -- Table structure for table `category`
 --
 
-CREATE TABLE `category` (
-  `categoryid` int(11) NOT NULL,
-  `categoryname` varchar(30) NOT NULL
+CREATE TABLE `category`
+(
+  `categoryid` int
+(11) NOT NULL,
+  `categoryname` varchar
+(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `category`
 --
 
-INSERT INTO `category` (`categoryid`, `categoryname`) VALUES
+INSERT INTO `category` (`
+categoryid`,
+`categoryname
+`) VALUES
 (7, 'Chair'),
 (8, 'Sofa'),
 (9, 'New Test');
@@ -48,11 +57,15 @@ INSERT INTO `category` (`categoryid`, `categoryname`) VALUES
 -- Table structure for table `comments`
 --
 
-CREATE TABLE `comments` (
-  `comment_id` int(11) NOT NULL,
-  `comment_subject` varchar(250) NOT NULL,
+CREATE TABLE `comments`
+(
+  `comment_id` int
+(11) NOT NULL,
+  `comment_subject` varchar
+(250) NOT NULL,
   `comment_text` text NOT NULL,
-  `comment_status` int(1) NOT NULL
+  `comment_status` int
+(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -61,13 +74,20 @@ CREATE TABLE `comments` (
 -- Table structure for table `customer`
 --
 
-CREATE TABLE `customer` (
-  `customerid` int(11) NOT NULL,
-  `customername` varchar(30) NOT NULL,
-  `customerpassword` varchar(30) NOT NULL,
-  `customeremail` varchar(30) NOT NULL,
-  `customerphonenumber` varchar(30) NOT NULL,
-  `customeraddress` varchar(30) NOT NULL,
+CREATE TABLE `customer`
+(
+  `customerid` int
+(11) NOT NULL,
+  `customername` varchar
+(30) NOT NULL,
+  `customerpassword` varchar
+(30) NOT NULL,
+  `customeremail` varchar
+(30) NOT NULL,
+  `customerphonenumber` varchar
+(30) NOT NULL,
+  `customeraddress` varchar
+(30) NOT NULL,
   `customerprofile` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -75,7 +95,10 @@ CREATE TABLE `customer` (
 -- Dumping data for table `customer`
 --
 
-INSERT INTO `customer` (`customerid`, `customername`, `customerpassword`, `customeremail`, `customerphonenumber`, `customeraddress`, `customerprofile`) VALUES
+INSERT INTO `customer` (`
+customerid`,
+`customername
+`, `customerpassword`, `customeremail`, `customerphonenumber`, `customeraddress`, `customerprofile`) VALUES
 (32, 'oop', 'oop', 'oop@gmail.com', 'oop', '					oop				', 'images/_https___hypebeast.com_image_2021_06_brabus-900-rocket-edition-mercedes-amg-g63-g-wagon-tuned-custom-900hp-power-speed-0.jpg'),
 (34, 'Andrew edit', 'kmd', 'soe153appleid@gmail.com', '009', '					ygn				', 'images/_244333954_244200051056011_7250399859362412248_n.jpg'),
 (35, 'fsdf', 'ssdf34', 'kljhafdasfdgjkj@gmali.com', '34243', 'sdf', 'images/_catcat.jpg'),
@@ -87,19 +110,28 @@ INSERT INTO `customer` (`customerid`, `customername`, `customerpassword`, `custo
 -- Table structure for table `delivery`
 --
 
-CREATE TABLE `delivery` (
-  `deliveryID` int(11) NOT NULL,
-  `cusName` varchar(30) NOT NULL,
-  `orderid` varchar(50) NOT NULL,
-  `cusAddress` varchar(50) NOT NULL,
-  `cusPhone` varchar(30) NOT NULL
+CREATE TABLE `delivery`
+(
+  `deliveryID` int
+(11) NOT NULL,
+  `cusName` varchar
+(30) NOT NULL,
+  `orderid` varchar
+(50) NOT NULL,
+  `cusAddress` varchar
+(50) NOT NULL,
+  `cusPhone` varchar
+(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `delivery`
 --
 
-INSERT INTO `delivery` (`deliveryID`, `cusName`, `orderid`, `cusAddress`, `cusPhone`) VALUES
+INSERT INTO `delivery` (`
+deliveryID`,
+`cusName
+`, `orderid`, `cusAddress`, `cusPhone`) VALUES
 (6, 'Andrew', 'OR-000106', 'YGN', '0988'),
 (7, 'Andrew 001 ', 'OR-000107', 'YYGN', '0989898'),
 (8, 'Andrew89', 'OR-000108', '88', '88'),
@@ -111,19 +143,23 @@ INSERT INTO `delivery` (`deliveryID`, `cusName`, `orderid`, `cusAddress`, `cusPh
 -- Table structure for table `fileupload`
 --
 
-CREATE TABLE `fileupload` (
-  `files` varchar(100) NOT NULL
+CREATE TABLE `fileupload`
+(
+  `files` varchar
+(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `fileupload`
 --
 
-INSERT INTO `fileupload` (`files`) VALUES
-('images/_277734912_389341183196917_2606121371545654812_n.jpg'),
-('images/_wanted.php'),
-('images/_PDF Store_v1.0_apkpure.com.xapk'),
-('images/_274040960_1144073663023273_5233969900527279082_n.jpg');
+INSERT INTO `fileupload` (`
+files`)
+VALUES
+  ('images/_277734912_389341183196917_2606121371545654812_n.jpg'),
+  ('images/_wanted.php'),
+  ('images/_PDF Store_v1.0_apkpure.com.xapk'),
+  ('images/_274040960_1144073663023273_5233969900527279082_n.jpg');
 
 -- --------------------------------------------------------
 
@@ -131,23 +167,36 @@ INSERT INTO `fileupload` (`files`) VALUES
 -- Table structure for table `item`
 --
 
-CREATE TABLE `item` (
-  `id` int(11) NOT NULL,
-  `categoryid` int(11) NOT NULL,
-  `productid` int(11) NOT NULL,
-  `item_name` int(50) NOT NULL,
-  `item_quantity` int(11) NOT NULL,
-  `item_name1` int(50) NOT NULL,
-  `item_quantity1` int(11) NOT NULL,
-  `item_name2` int(11) NOT NULL,
-  `item_quantity2` int(11) NOT NULL
+CREATE TABLE `item`
+(
+  `id` int
+(11) NOT NULL,
+  `categoryid` int
+(11) NOT NULL,
+  `productid` int
+(11) NOT NULL,
+  `item_name` int
+(50) NOT NULL,
+  `item_quantity` int
+(11) NOT NULL,
+  `item_name1` int
+(50) NOT NULL,
+  `item_quantity1` int
+(11) NOT NULL,
+  `item_name2` int
+(11) NOT NULL,
+  `item_quantity2` int
+(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `item`
 --
 
-INSERT INTO `item` (`id`, `categoryid`, `productid`, `item_name`, `item_quantity`, `item_name1`, `item_quantity1`, `item_name2`, `item_quantity2`) VALUES
+INSERT INTO `item` (`
+id`,
+`categoryid
+`, `productid`, `item_name`, `item_quantity`, `item_name1`, `item_quantity1`, `item_name2`, `item_quantity2`) VALUES
 (96, 7, 23, 18, 12, 0, 0, 0, 0),
 (97, 8, 14, 17, 30, 18, 20, 0, 0);
 
@@ -157,19 +206,28 @@ INSERT INTO `item` (`id`, `categoryid`, `productid`, `item_name`, `item_quantity
 -- Table structure for table `itemdetail`
 --
 
-CREATE TABLE `itemdetail` (
-  `categoryid` int(11) NOT NULL,
-  `productid` int(11) NOT NULL,
-  `rawid` int(11) NOT NULL,
-  `rawqty` int(11) NOT NULL,
-  `staffid` int(11) NOT NULL
+CREATE TABLE `itemdetail`
+(
+  `categoryid` int
+(11) NOT NULL,
+  `productid` int
+(11) NOT NULL,
+  `rawid` int
+(11) NOT NULL,
+  `rawqty` int
+(11) NOT NULL,
+  `staffid` int
+(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `itemdetail`
 --
 
-INSERT INTO `itemdetail` (`categoryid`, `productid`, `rawid`, `rawqty`, `staffid`) VALUES
+INSERT INTO `itemdetail` (`
+categoryid`,
+`productid
+`, `rawid`, `rawqty`, `staffid`) VALUES
 (7, 13, 17, 100, 45),
 (7, 13, 18, 100, 45),
 (7, 13, 19, 100, 45),
@@ -188,20 +246,29 @@ INSERT INTO `itemdetail` (`categoryid`, `productid`, `rawid`, `rawqty`, `staffid
 -- Table structure for table `message`
 --
 
-CREATE TABLE `message` (
-  `staffid` int(11) NOT NULL,
-  `messageid` int(11) NOT NULL,
+CREATE TABLE `message`
+(
+  `staffid` int
+(11) NOT NULL,
+  `messageid` int
+(11) NOT NULL,
   `messagedate` datetime NOT NULL,
-  `message_title` varchar(200) NOT NULL,
-  `messagedescription` varchar(900) NOT NULL,
-  `message_status` int(1) NOT NULL
+  `message_title` varchar
+(200) NOT NULL,
+  `messagedescription` varchar
+(900) NOT NULL,
+  `message_status` int
+(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `message`
 --
 
-INSERT INTO `message` (`staffid`, `messageid`, `messagedate`, `message_title`, `messagedescription`, `message_status`) VALUES
+INSERT INTO `message` (`
+staffid`,
+`messageid
+`, `messagedate`, `message_title`, `messagedescription`, `message_status`) VALUES
 (46, 30, '2022-06-15 21:41:15', 'Today Evening Meeting', '3rd floor, K-36 room, at 5:00 p.m. (To all staff))', 1),
 (46, 31, '2022-06-16 07:33:49', 'Meeting at Tomorrow', 'At 12.00 a.m.', 1),
 (46, 32, '2022-12-01 12:10:29', 'Test_1', 'This is the test message', 1);
@@ -212,18 +279,26 @@ INSERT INTO `message` (`staffid`, `messageid`, `messagedate`, `message_title`, `
 -- Table structure for table `orderdetail`
 --
 
-CREATE TABLE `orderdetail` (
-  `orderid` varchar(30) NOT NULL,
-  `productid` int(11) NOT NULL,
-  `unitprice` int(11) NOT NULL,
-  `unitquantity` int(11) NOT NULL
+CREATE TABLE `orderdetail`
+(
+  `orderid` varchar
+(30) NOT NULL,
+  `productid` int
+(11) NOT NULL,
+  `unitprice` int
+(11) NOT NULL,
+  `unitquantity` int
+(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `orderdetail`
 --
 
-INSERT INTO `orderdetail` (`orderid`, `productid`, `unitprice`, `unitquantity`) VALUES
+INSERT INTO `orderdetail` (`
+orderid`,
+`productid
+`, `unitprice`, `unitquantity`) VALUES
 ('OR-000001', 12, 170000, 1),
 ('OR-000002', 18, 100000, 5),
 ('OR-000003', 18, 100000, 1),
@@ -408,28 +483,39 @@ INSERT INTO `orderdetail` (`orderid`, `productid`, `unitprice`, `unitquantity`) 
 -- Table structure for table `orders`
 --
 
-CREATE TABLE `orders` (
-  `orderid` varchar(20) NOT NULL,
+CREATE TABLE `orders`
+(
+  `orderid` varchar
+(20) NOT NULL,
   `orderdate` date NOT NULL,
-  `customerid` int(11) NOT NULL,
-  `totalamount` int(11) NOT NULL,
-  `totalquantity` int(11) NOT NULL,
-  `orderstatus` varchar(30) NOT NULL,
-  `cardtype` varchar(30) NOT NULL,
-  `Delivery` varchar(10) NOT NULL
+  `customerid` int
+(11) NOT NULL,
+  `totalamount` int
+(11) NOT NULL,
+  `totalquantity` int
+(11) NOT NULL,
+  `orderstatus` varchar
+(30) NOT NULL,
+  `cardtype` varchar
+(30) NOT NULL,
+  `Delivery` varchar
+(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `orders`
 --
 
-INSERT INTO `orders` (`orderid`, `orderdate`, `customerid`, `totalamount`, `totalquantity`, `orderstatus`, `cardtype`, `Delivery`) VALUES
+INSERT INTO `orders` (`
+orderid`,
+`orderdate
+`, `customerid`, `totalamount`, `totalquantity`, `orderstatus`, `cardtype`, `Delivery`) VALUES
 ('', '1970-01-01', 34, 500000, 1, 'Pending', 'ok', ''),
 ('OR-000001', '2022-01-22', 32, 170000, 1, 'confirm', 'Visa', ''),
 ('OR-000002', '2022-02-22', 32, 500000, 5, 'confirm', 'COD', ''),
 ('OR-000003', '2022-02-22', 32, 100000, 1, 'confirm', 'Visa', ''),
-('OR-000004', '2022-01-26', 32, 5000000, 10, 'Conform', 'Visa', ''),
-('OR-000005', '2022-02-26', 32, 500000, 2, 'Conform', 'COD', ''),
+('OR-000004', '2022-01-26', 32, 5000000, 10, 'confirm', 'Visa', ''),
+('OR-000005', '2022-02-26', 32, 500000, 2, 'confirm', 'COD', ''),
 ('OR-000006', '2022-03-09', 32, 580999, 5, 'Pending', 'Master', ''),
 ('OR-000007', '2022-03-22', 32, 2500000, 50, 'Pending', 'Visa', ''),
 ('OR-000008', '2022-03-31', 32, 97902, 98, 'Pending', 'Master', ''),
@@ -530,10 +616,10 @@ INSERT INTO `orders` (`orderid`, `orderdate`, `customerid`, `totalamount`, `tota
 ('OR-000103', '2022-06-15', 34, 30000, 3, 'Pending', '', ''),
 ('OR-000104', '2022-06-16', 34, 600000, 3, 'Pending', '', ''),
 ('OR-000105', '2022-06-29', 34, 1500000, 3, 'Pending', 'AYA', ''),
-('OR-000106', '2022-06-29', 34, 500000, 1, 'Conform', 'AYA Bank', 'YES'),
+('OR-000106', '2022-06-29', 34, 500000, 1, 'confirm', 'AYA Bank', 'YES'),
 ('OR-000107', '2022-06-29', 34, 1600000, 8, 'Pending', 'PayPal', 'YES'),
 ('OR-000108', '2022-06-29', 34, 500000, 1, 'Pending', 'Cheque Payment', 'YES'),
-('OR-000109', '2022-06-29', 34, 5000000, 10, 'Conform', 'Cheque Payment', 'YES');
+('OR-000109', '2022-06-29', 34, 5000000, 10, 'confirm', 'Cheque Payment', 'YES');
 
 -- --------------------------------------------------------
 
@@ -541,13 +627,20 @@ INSERT INTO `orders` (`orderid`, `orderdate`, `customerid`, `totalamount`, `tota
 -- Table structure for table `product`
 --
 
-CREATE TABLE `product` (
-  `productid` int(11) NOT NULL,
-  `productname` varchar(50) NOT NULL,
-  `categoryid` int(11) NOT NULL,
-  `unitprice` int(11) NOT NULL,
-  `unitquantity` int(11) NOT NULL,
-  `productdescription` varchar(100) NOT NULL,
+CREATE TABLE `product`
+(
+  `productid` int
+(11) NOT NULL,
+  `productname` varchar
+(50) NOT NULL,
+  `categoryid` int
+(11) NOT NULL,
+  `unitprice` int
+(11) NOT NULL,
+  `unitquantity` int
+(11) NOT NULL,
+  `productdescription` varchar
+(100) NOT NULL,
   `productprofile` text NOT NULL,
   `3D` text NOT NULL,
   `AR` text NOT NULL
@@ -557,7 +650,10 @@ CREATE TABLE `product` (
 -- Dumping data for table `product`
 --
 
-INSERT INTO `product` (`productid`, `productname`, `categoryid`, `unitprice`, `unitquantity`, `productdescription`, `productprofile`, `3D`, `AR`) VALUES
+INSERT INTO `product` (`
+productid`,
+`productname
+`, `categoryid`, `unitprice`, `unitquantity`, `productdescription`, `productprofile`, `3D`, `AR`) VALUES
 (12, 'Sofa Chair', 7, 170000, 50, 'Sofa Chair', 'images/_chair sofa.png', '', ''),
 (13, 'Gaming Chair', 7, 200000, 39, 'Gaming Chair', 'images/_chair.png', '', ''),
 (14, 'Sofa Lux', 8, 500000, 962, 'Sofa Luxury Chair', 'images/_Luxury-Designer-Contemporary-Leather-Italian-Sofa-1.jpg', '', ''),
@@ -575,19 +671,27 @@ INSERT INTO `product` (`productid`, `productname`, `categoryid`, `unitprice`, `u
 -- Table structure for table `production`
 --
 
-CREATE TABLE `production` (
-  `productionid` varchar(100) NOT NULL,
+CREATE TABLE `production`
+(
+  `productionid` varchar
+(100) NOT NULL,
   `productiondate` date NOT NULL,
-  `staffid` int(11) NOT NULL,
-  `totalquantity` int(11) NOT NULL,
-  `productionstatus` varchar(20) NOT NULL
+  `staffid` int
+(11) NOT NULL,
+  `totalquantity` int
+(11) NOT NULL,
+  `productionstatus` varchar
+(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `production`
 --
 
-INSERT INTO `production` (`productionid`, `productiondate`, `staffid`, `totalquantity`, `productionstatus`) VALUES
+INSERT INTO `production` (`
+productionid`,
+`productiondate
+`, `staffid`, `totalquantity`, `productionstatus`) VALUES
 ('PRO-000001', '2022-05-14', 46, 1, 'Pending'),
 ('PRO-000002', '2022-05-14', 46, 1, 'Pending'),
 ('PRO-000003', '2022-05-14', 45, 2, 'Pending'),
@@ -623,18 +727,26 @@ INSERT INTO `production` (`productionid`, `productiondate`, `staffid`, `totalqua
 -- Table structure for table `productiondetail`
 --
 
-CREATE TABLE `productiondetail` (
-  `productionid` varchar(100) NOT NULL,
-  `categoryid` int(11) NOT NULL,
-  `productid` int(11) NOT NULL,
-  `totalquantity` int(11) NOT NULL
+CREATE TABLE `productiondetail`
+(
+  `productionid` varchar
+(100) NOT NULL,
+  `categoryid` int
+(11) NOT NULL,
+  `productid` int
+(11) NOT NULL,
+  `totalquantity` int
+(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `productiondetail`
 --
 
-INSERT INTO `productiondetail` (`productionid`, `categoryid`, `productid`, `totalquantity`) VALUES
+INSERT INTO `productiondetail` (`
+productionid`,
+`categoryid
+`, `productid`, `totalquantity`) VALUES
 ('PRO-000001', 8, 14, 1),
 ('PRO-000002', 8, 14, 1),
 ('PRO-000003', 8, 14, 2),
@@ -673,21 +785,31 @@ INSERT INTO `productiondetail` (`productionid`, `categoryid`, `productid`, `tota
 -- Table structure for table `purchase`
 --
 
-CREATE TABLE `purchase` (
-  `purchaseid` varchar(20) NOT NULL,
+CREATE TABLE `purchase`
+(
+  `purchaseid` varchar
+(20) NOT NULL,
   `purchasedate` date NOT NULL,
-  `supplierid` int(11) NOT NULL,
-  `staffid` int(11) NOT NULL,
-  `totalamount` int(11) NOT NULL,
-  `totalquantity` int(11) NOT NULL,
-  `purchasestatus` varchar(30) NOT NULL
+  `supplierid` int
+(11) NOT NULL,
+  `staffid` int
+(11) NOT NULL,
+  `totalamount` int
+(11) NOT NULL,
+  `totalquantity` int
+(11) NOT NULL,
+  `purchasestatus` varchar
+(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `purchase`
 --
 
-INSERT INTO `purchase` (`purchaseid`, `purchasedate`, `supplierid`, `staffid`, `totalamount`, `totalquantity`, `purchasestatus`) VALUES
+INSERT INTO `purchase` (`
+purchaseid`,
+`purchasedate
+`, `supplierid`, `staffid`, `totalamount`, `totalquantity`, `purchasestatus`) VALUES
 ('PUR-000001', '2022-05-13', 8, 45, 100000, 1000, 'Pending'),
 ('PUR-000002', '2022-05-13', 4, 50, 1100000, 11000, 'Pending'),
 ('PUR-000003', '2022-05-15', 4, 50, 12100, 110, 'Pending'),
@@ -727,19 +849,28 @@ INSERT INTO `purchase` (`purchaseid`, `purchasedate`, `supplierid`, `staffid`, `
 -- Table structure for table `purchasedetail`
 --
 
-CREATE TABLE `purchasedetail` (
-  `purchaseid` varchar(30) NOT NULL,
-  `rawid` int(11) NOT NULL,
-  `rawtype` varchar(30) NOT NULL,
-  `unitprice` int(11) NOT NULL,
-  `unitquantity` int(11) NOT NULL
+CREATE TABLE `purchasedetail`
+(
+  `purchaseid` varchar
+(30) NOT NULL,
+  `rawid` int
+(11) NOT NULL,
+  `rawtype` varchar
+(30) NOT NULL,
+  `unitprice` int
+(11) NOT NULL,
+  `unitquantity` int
+(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `purchasedetail`
 --
 
-INSERT INTO `purchasedetail` (`purchaseid`, `rawid`, `rawtype`, `unitprice`, `unitquantity`) VALUES
+INSERT INTO `purchasedetail` (`
+purchaseid`,
+`rawid
+`, `rawtype`, `unitprice`, `unitquantity`) VALUES
 ('PUR-000001', 17, 'Teak', 100, 1000),
 ('PUR-000002', 17, 'Teak', 100, 1000),
 ('PUR-000002', 18, 'Padauk', 100, 10000),
@@ -784,12 +915,18 @@ INSERT INTO `purchasedetail` (`purchaseid`, `rawid`, `rawtype`, `unitprice`, `un
 -- Table structure for table `raw`
 --
 
-CREATE TABLE `raw` (
-  `rawid` int(11) NOT NULL,
-  `rawtype` varchar(30) NOT NULL,
-  `rawdes` varchar(100) NOT NULL,
-  `rawtp` int(11) NOT NULL,
-  `rawqtyleft` int(11) NOT NULL,
+CREATE TABLE `raw`
+(
+  `rawid` int
+(11) NOT NULL,
+  `rawtype` varchar
+(30) NOT NULL,
+  `rawdes` varchar
+(100) NOT NULL,
+  `rawtp` int
+(11) NOT NULL,
+  `rawqtyleft` int
+(11) NOT NULL,
   `rawprofile` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -797,7 +934,10 @@ CREATE TABLE `raw` (
 -- Dumping data for table `raw`
 --
 
-INSERT INTO `raw` (`rawid`, `rawtype`, `rawdes`, `rawtp`, `rawqtyleft`, `rawprofile`) VALUES
+INSERT INTO `raw` (`
+rawid`,
+`rawtype
+`, `rawdes`, `rawtp`, `rawqtyleft`, `rawprofile`) VALUES
 (17, 'Teak', 'Wood', 112692, 90, 'images/__3.jpg'),
 (18, 'Padauk', 'Wood', 10317, -40, 'images/__5410165.jpg'),
 (19, 'testtest', 'testtest', 1000, 0, 'images/__5410165.jpg');
@@ -808,15 +948,24 @@ INSERT INTO `raw` (`rawid`, `rawtype`, `rawdes`, `rawtp`, `rawqtyleft`, `rawprof
 -- Table structure for table `staff`
 --
 
-CREATE TABLE `staff` (
-  `staffid` int(11) NOT NULL,
-  `staffname` varchar(30) NOT NULL,
-  `staffemail` varchar(30) NOT NULL,
-  `password` varchar(30) NOT NULL,
-  `phonenumber` varchar(50) NOT NULL,
-  `address` varchar(100) NOT NULL,
-  `staffrole` varchar(100) NOT NULL,
-  `staffskill` varchar(500) NOT NULL,
+CREATE TABLE `staff`
+(
+  `staffid` int
+(11) NOT NULL,
+  `staffname` varchar
+(30) NOT NULL,
+  `staffemail` varchar
+(30) NOT NULL,
+  `password` varchar
+(30) NOT NULL,
+  `phonenumber` varchar
+(50) NOT NULL,
+  `address` varchar
+(100) NOT NULL,
+  `staffrole` varchar
+(100) NOT NULL,
+  `staffskill` varchar
+(500) NOT NULL,
   `staffprofile` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -824,7 +973,10 @@ CREATE TABLE `staff` (
 -- Dumping data for table `staff`
 --
 
-INSERT INTO `staff` (`staffid`, `staffname`, `staffemail`, `password`, `phonenumber`, `address`, `staffrole`, `staffskill`, `staffprofile`) VALUES
+INSERT INTO `staff` (`
+staffid`,
+`staffname
+`, `staffemail`, `password`, `phonenumber`, `address`, `staffrole`, `staffskill`, `staffprofile`) VALUES
 (45, 'Andrew staff', 'andrew@gmail.com', 'andrew', 'oop', 'Yangon, Tarmwe, Myanmar.', 'Sales Manager', 'Sales, Management , Casher', 'images/_2.jpg'),
 (46, 'Tom edit', 'tom@gmail.com', 'tom', '009', '																																																																		 Yangon 																										', 'Staff Manager', 'HTML, Java, C++', 'images/_243331689_244200037722679_4809425692561492596_n.jpg'),
 (50, 'Deli man', 'deliman@gmail.com', 'deliman', '09457825664', 'YGN, Pyay Road.', 'Delivery', 'Driving, Delivery Process', 'images/_3.jpg'),
@@ -836,19 +988,28 @@ INSERT INTO `staff` (`staffid`, `staffname`, `staffemail`, `password`, `phonenum
 -- Table structure for table `supplier`
 --
 
-CREATE TABLE `supplier` (
-  `supplierid` int(11) NOT NULL,
-  `suppliername` varchar(30) NOT NULL,
-  `supplieraddress` varchar(50) NOT NULL,
-  `supplierphone` varchar(30) NOT NULL,
-  `supplieremail` varchar(30) NOT NULL
+CREATE TABLE `supplier`
+(
+  `supplierid` int
+(11) NOT NULL,
+  `suppliername` varchar
+(30) NOT NULL,
+  `supplieraddress` varchar
+(50) NOT NULL,
+  `supplierphone` varchar
+(30) NOT NULL,
+  `supplieremail` varchar
+(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `supplier`
 --
 
-INSERT INTO `supplier` (`supplierid`, `suppliername`, `supplieraddress`, `supplierphone`, `supplieremail`) VALUES
+INSERT INTO `supplier` (`
+supplierid`,
+`suppliername
+`, `supplieraddress`, `supplierphone`, `supplieremail`) VALUES
 (4, 'Nature Wood', 'Yangon Port', '09456321558', 'sale@naturewood.com.sg'),
 (8, 'Asia Wood Col,Ltd', 'Hlaing Tharyar , Industrial Zone (4), Yangon.', '09854782114', 'asiawood.ygn@gmail.com'),
 (9, 'New Test Supplier', 'Yangon', '099898989', 'test@gmail.com'),
@@ -862,79 +1023,92 @@ INSERT INTO `supplier` (`supplierid`, `suppliername`, `supplieraddress`, `suppli
 -- Indexes for table `category`
 --
 ALTER TABLE `category`
-  ADD PRIMARY KEY (`categoryid`);
+ADD PRIMARY KEY
+(`categoryid`);
 
 --
 -- Indexes for table `comments`
 --
 ALTER TABLE `comments`
-  ADD PRIMARY KEY (`comment_id`);
+ADD PRIMARY KEY
+(`comment_id`);
 
 --
 -- Indexes for table `customer`
 --
 ALTER TABLE `customer`
-  ADD PRIMARY KEY (`customerid`);
+ADD PRIMARY KEY
+(`customerid`);
 
 --
 -- Indexes for table `delivery`
 --
 ALTER TABLE `delivery`
-  ADD PRIMARY KEY (`deliveryID`);
+ADD PRIMARY KEY
+(`deliveryID`);
 
 --
 -- Indexes for table `item`
 --
 ALTER TABLE `item`
-  ADD PRIMARY KEY (`id`);
+ADD PRIMARY KEY
+(`id`);
 
 --
 -- Indexes for table `message`
 --
 ALTER TABLE `message`
-  ADD PRIMARY KEY (`messageid`);
+ADD PRIMARY KEY
+(`messageid`);
 
 --
 -- Indexes for table `orders`
 --
 ALTER TABLE `orders`
-  ADD PRIMARY KEY (`orderid`);
+ADD PRIMARY KEY
+(`orderid`);
 
 --
 -- Indexes for table `product`
 --
 ALTER TABLE `product`
-  ADD PRIMARY KEY (`productid`);
+ADD PRIMARY KEY
+(`productid`);
 
 --
 -- Indexes for table `production`
 --
 ALTER TABLE `production`
-  ADD PRIMARY KEY (`productionid`);
+ADD PRIMARY KEY
+(`productionid`);
 
 --
 -- Indexes for table `purchase`
 --
 ALTER TABLE `purchase`
-  ADD PRIMARY KEY (`purchaseid`);
+ADD PRIMARY KEY
+(`purchaseid`);
 
 --
 -- Indexes for table `raw`
 --
 ALTER TABLE `raw`
-  ADD PRIMARY KEY (`rawid`);
+ADD PRIMARY KEY
+(`rawid`);
 
 --
 -- Indexes for table `staff`
 --
 ALTER TABLE `staff`
-  ADD PRIMARY KEY (`staffid`);
+ADD PRIMARY KEY
+(`staffid`);
 
 --
 -- Indexes for table `supplier`
 --
 ALTER TABLE `supplier`
-  ADD PRIMARY KEY (`supplierid`);
+ADD PRIMARY KEY
+(`supplierid`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -944,61 +1118,71 @@ ALTER TABLE `supplier`
 -- AUTO_INCREMENT for table `category`
 --
 ALTER TABLE `category`
-  MODIFY `categoryid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `categoryid` int
+(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `comments`
 --
 ALTER TABLE `comments`
-  MODIFY `comment_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `comment_id` int
+(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `customer`
 --
 ALTER TABLE `customer`
-  MODIFY `customerid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
+  MODIFY `customerid` int
+(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
 
 --
 -- AUTO_INCREMENT for table `delivery`
 --
 ALTER TABLE `delivery`
-  MODIFY `deliveryID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `deliveryID` int
+(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `item`
 --
 ALTER TABLE `item`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=98;
+  MODIFY `id` int
+(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=98;
 
 --
 -- AUTO_INCREMENT for table `message`
 --
 ALTER TABLE `message`
-  MODIFY `messageid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
+  MODIFY `messageid` int
+(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 
 --
 -- AUTO_INCREMENT for table `product`
 --
 ALTER TABLE `product`
-  MODIFY `productid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
+  MODIFY `productid` int
+(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
 
 --
 -- AUTO_INCREMENT for table `raw`
 --
 ALTER TABLE `raw`
-  MODIFY `rawid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `rawid` int
+(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `staff`
 --
 ALTER TABLE `staff`
-  MODIFY `staffid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=54;
+  MODIFY `staffid` int
+(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=54;
 
 --
 -- AUTO_INCREMENT for table `supplier`
 --
 ALTER TABLE `supplier`
-  MODIFY `supplierid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `supplierid` int
+(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

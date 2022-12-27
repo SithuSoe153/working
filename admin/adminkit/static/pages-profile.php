@@ -7,7 +7,7 @@ error_reporting(E_ALL);
 
 
 $profilephpans = "active";
-include('../../connect.php');
+include('connect.php');
 include('sheader.php');
 
 

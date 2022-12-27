@@ -44,7 +44,7 @@ if (isset($_REQUEST['productid'])) {
     <input type="hidden" name="action" value="buy" />
 
     <section class="breadcrumbs-custom">
-        <div class="parallax-container" data-parallax-img="images/bg-blog-2.jpg">
+        <div class="parallax-container" data-parallax-img="../../../work/images/bg-blog-2.jpg">
             <div class="breadcrumbs-custom-body parallax-content context-dark">
                 <div class="container">
                     <h2 class="breadcrumbs-custom-title">Product Detail</h2>
@@ -83,11 +83,11 @@ if (isset($_REQUEST['productid'])) {
                                 </div>
                             </div>
                             <div class="item">
-                                <div class="slick-product-figure"><img src="images/single-product-2-530x480.png" alt="" width="530" height="480" />
+                                <div class="slick-product-figure"><img src="../../../work/images/single-product-2-530x480.png" alt="" width="530" height="480" />
                                 </div>
                             </div>
                             <div class="item">
-                                <div class="slick-product-figure"><img src="images/single-product-3-530x480.png" alt="" width="530" height="480" />
+                                <div class="slick-product-figure"><img src="../../../work/images/single-product-3-530x480.png" alt="" width="530" height="480" />
                                 </div>
                             </div>
                         </div>
@@ -97,11 +97,11 @@ if (isset($_REQUEST['productid'])) {
                                 </div>
                             </div>
                             <div class="item">
-                                <div class="slick-product-figure"><img src="images/single-product-2-530x480.png" alt="" width="530" height="480" />
+                                <div class="slick-product-figure"><img src="../../../work/images/single-product-2-530x480.png" alt="" width="530" height="480" />
                                 </div>
                             </div>
                             <div class="item">
-                                <div class="slick-product-figure"><img src="images/single-product-3-530x480.png" alt="" width="530" height="480" />
+                                <div class="slick-product-figure"><img src="../../../work/images/single-product-3-530x480.png" alt="" width="530" height="480" />
                                 </div>
                             </div>
                         </div>
@@ -163,82 +163,7 @@ if (isset($_REQUEST['productid'])) {
                     </div>
                 </div>
             </div>
-            <!-- Bootstrap tabs-->
-            <!-- <div class="tabs-custom tabs-horizontal tabs-line" id="tabs-1"> -->
-            <!-- Nav tabs-->
-            <!-- <div class="nav-tabs-wrap">
-                    <ul class="nav nav-tabs nav-tabs-1">
-                        <li class="nav-item" role="presentation"><a class="nav-link active" href="#tabs-1-1" data-bs-toggle="tab">Reviews</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-1-2" data-bs-toggle="tab">Additional information</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-1-3" data-bs-toggle="tab">Delivery and payment</a></li>
-                    </ul>
-                </div> -->
-            <!-- Tab panes-->
-            <!-- <div class="tab-content tab-content-1">
-                    <div class="tab-pane fade show active" id="tabs-1-1">
-                        <div class="box-comment">
-                            <div class="unit flex-column flex-sm-row unit-spacing-md">
-                                <div class="unit-left"><a class="box-comment-figure" href="#"><img src="images/user-1-119x119.jpg" alt="" width="119" height="119" /></a></div>
-                                <div class="unit-body">
-                                    <div class="group-sm group-justify">
-                                        <div>
-                                            <div class="group-xs group-middle">
-                                                <h5 class="box-comment-author"><a href="#">Jane Doe</a></h5>
-                                                <div class="box-rating"><span class="icon mdi mdi-star"></span><span class="icon mdi mdi-star"></span><span class="icon mdi mdi-star"></span><span class="icon mdi mdi-star"></span><span class="icon mdi mdi-star-half"></span></div>
-                                            </div>
-                                        </div>
-                                        <div class="box-comment-time">
-                                            <time datetime="2021-11-30">Nov 30, 2021</time>
-                                        </div>
-                                    </div>
-                                    <p class="box-comment-text">Donec nulla mauris, tempor ac velit at, consectetur tempor enim. Donec rutrum faucibus consectetur. Vivamus blandit leo a sodales sagittis. Sed nulla lacus, placerat eget urna in, ultricies scelerisque nunc.</p>
-                                </div>
-                            </div>
-                        </div> -->
 
-
-
-            <!-- <h4 class="text-transform-none fw-medium">Leave a Review</h4>
-                        <form class="rd-form rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
-                            <div class="row row-20 row-md-30">
-                                <div class="col-lg-8">
-                                    <div class="row row-20 row-md-30">
-                                        <div class="col-sm-6">
-                                            <div class="form-wrap">
-                                                <input class="form-input" id="contact-first-name-2" type="text" name="name" data-constraints="@Required" />
-                                                <label class="form-label" for="contact-first-name-2">First Name</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="form-wrap">
-                                                <input class="form-input" id="contact-last-name-2" type="text" name="name" data-constraints="@Required" />
-                                                <label class="form-label" for="contact-last-name-2">Last Name</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="form-wrap">
-                                                <input class="form-input" id="contact-email-2" type="email" name="email" data-constraints="@Email @Required" />
-                                                <label class="form-label" for="contact-email-2">E-mail</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="form-wrap">
-                                                <input class="form-input" id="contact-phone-2" type="text" name="phone" data-constraints="@Numeric" />
-                                                <label class="form-label" for="contact-phone-2">Phone</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="form-wrap">
-                                        <label class="form-label" for="contact-message-2">Message</label>
-                                        <textarea class="form-input textarea-lg" id="contact-message-2" name="phone" data-constraints="@Required"></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                            <button class="btn btn-lg btn-secondary btn-zakaria" type="submit">Send Message</button>
-                        </form>
-                    </div> -->
             <div class="tab-pane fade" id="tabs-1-2">
                 <div class="single-product-info">
                     <div class="unit unit-spacing-md flex-column flex-sm-row align-items-sm-center">
@@ -276,16 +201,16 @@ if (isset($_REQUEST['productid'])) {
                     <!-- Product-->
                     <article class="product">
                         <div class="product-body">
-                            <div class="product-figure"><img src="images/product-1-129x172.png" alt="" width="129" height="172" />
+                            <div class="product-figure"><img src="../../../work/images/product-1-129x172.png" alt="" width="129" height="172" />
                             </div>
-                            <h5 class="product-title"><a href="single-product.html">Garden table</a></h5>
+                            <h5 class="product-title"><a href="single-product.php?productid=<?php echo $productid ?>">Garden table</a></h5>
                             <div class="product-price-wrap">
                                 <div class="product-price product-price-old">$30.00</div>
                                 <div class="product-price">$23.00</div>
                             </div>
                         </div><span class="product-badge product-badge-sale">Sale</span>
                         <div class="product-button-wrap">
-                            <div class="product-button"><a class="btn btn-secondary btn-zakaria fl-bigmug-line-search74" href="single-product.html"></a></div>
+                            <div class="product-button"><a class="btn btn-secondary btn-zakaria fl-bigmug-line-search74" href="single-product.php?productid=<?php echo $productid ?>"></a></div>
                             <div class="product-button"><a class="btn btn-primary btn-zakaria fl-bigmug-line-shopping202" href="cart-page.html"></a></div>
                         </div>
                     </article>
@@ -294,15 +219,15 @@ if (isset($_REQUEST['productid'])) {
                     <!-- Product-->
                     <article class="product">
                         <div class="product-body">
-                            <div class="product-figure"><img src="images/product-2-160x155.png" alt="" width="160" height="155" />
+                            <div class="product-figure"><img src="../../../work/images/product-2-160x155.png" alt="" width="160" height="155" />
                             </div>
-                            <h5 class="product-title"><a href="single-product.html">Club Chair</a></h5>
+                            <h5 class="product-title"><a href="single-product.php?productid=<?php echo $productid ?>">Club Chair</a></h5>
                             <div class="product-price-wrap">
                                 <div class="product-price">$13.00</div>
                             </div>
                         </div><span class="product-badge product-badge-new">New</span>
                         <div class="product-button-wrap">
-                            <div class="product-button"><a class="btn btn-secondary btn-zakaria fl-bigmug-line-search74" href="single-product.html"></a></div>
+                            <div class="product-button"><a class="btn btn-secondary btn-zakaria fl-bigmug-line-search74" href="single-product.php?productid=<?php echo $productid ?>"></a></div>
                             <div class="product-button"><a class="btn btn-primary btn-zakaria fl-bigmug-line-shopping202" href="cart-page.html"></a></div>
                         </div>
                     </article>
@@ -311,15 +236,15 @@ if (isset($_REQUEST['productid'])) {
                     <!-- Product-->
                     <article class="product">
                         <div class="product-body">
-                            <div class="product-figure"><img src="images/product-3-132x173.png" alt="" width="132" height="173" />
+                            <div class="product-figure"><img src="../../../work/images/product-3-132x173.png" alt="" width="132" height="173" />
                             </div>
-                            <h5 class="product-title"><a href="single-product.html">pendant lamp</a></h5>
+                            <h5 class="product-title"><a href="single-product.php?productid=<?php echo $productid ?>">pendant lamp</a></h5>
                             <div class="product-price-wrap">
                                 <div class="product-price">$17.00</div>
                             </div>
                         </div>
                         <div class="product-button-wrap">
-                            <div class="product-button"><a class="btn btn-secondary btn-zakaria fl-bigmug-line-search74" href="single-product.html"></a></div>
+                            <div class="product-button"><a class="btn btn-secondary btn-zakaria fl-bigmug-line-search74" href="single-product.php?productid=<?php echo $productid ?>"></a></div>
                             <div class="product-button"><a class="btn btn-primary btn-zakaria fl-bigmug-line-shopping202" href="cart-page.html"></a></div>
                         </div>
                     </article>
@@ -328,15 +253,15 @@ if (isset($_REQUEST['productid'])) {
                     <!-- Product-->
                     <article class="product">
                         <div class="product-body">
-                            <div class="product-figure"><img src="images/product-4-140x168.png" alt="" width="140" height="168" />
+                            <div class="product-figure"><img src="../../../work/images/product-4-140x168.png" alt="" width="140" height="168" />
                             </div>
-                            <h5 class="product-title"><a href="single-product.html">Dark grey club chair</a></h5>
+                            <h5 class="product-title"><a href="single-product.php?productid=<?php echo $productid ?>">Dark grey club chair</a></h5>
                             <div class="product-price-wrap">
                                 <div class="product-price">$18.00</div>
                             </div>
                         </div>
                         <div class="product-button-wrap">
-                            <div class="product-button"><a class="btn btn-secondary btn-zakaria fl-bigmug-line-search74" href="single-product.html"></a></div>
+                            <div class="product-button"><a class="btn btn-secondary btn-zakaria fl-bigmug-line-search74" href="single-product.php?productid=<?php echo $productid ?>"></a></div>
                             <div class="product-button"><a class="btn btn-primary btn-zakaria fl-bigmug-line-shopping202" href="cart-page.html"></a></div>
                         </div>
                     </article>

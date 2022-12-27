@@ -6,7 +6,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 $productphpans = "active";
-include('../../connect.php');
+include('connect.php');
 include('sheader.php');
 
 if (isset($_SESSION['sid'])) {
@@ -44,15 +44,15 @@ if (isset($_POST['btnregister'])) {
 	//////////////////////////////////Image/////////////////////////////////
 
 	$Image = $_FILES['productprofile']['name'];
-	$Folder = "images/";
-	$Folder1 = "../../images/";
-	$Folder2 = "../../../Raw/images/";
+	$Folder = "../../../work/images/";
+	// $Folder1 = "../../images/";
+	// $Folder2 = "../../../Raw/images/";
 	$filename = $Folder . '_' . $Image;
-	$filenamei1 = $Folder1 . '_' . $Image;
-	$filenamei2 = $Folder2 . '_' . $Image;
+	// $filenamei1 = $Folder1 . '_' . $Image;
+	// $filenamei2 = $Folder2 . '_' . $Image;
 	$image = copy($_FILES['productprofile']['tmp_name'], $filename);
-	$image1 = copy($_FILES['productprofile']['tmp_name'], $filenamei1);
-	$image2 = copy($_FILES['productprofile']['tmp_name'], $filenamei2);
+	// $image1 = copy($_FILES['productprofile']['tmp_name'], $filenamei1);
+	// $image2 = copy($_FILES['productprofile']['tmp_name'], $filenamei2);
 	if (!$image) {
 		echo "<p>Cannot Upload  Product Profile</p>";
 		exit();
@@ -62,39 +62,51 @@ if (isset($_POST['btnregister'])) {
 	/////////////////////////////////////////////////////////////////////////
 	//////////////////////////////////3D/////////////////////////////////
 
-	$Product3D = $_FILES['product3D']['name'];
-	$Folder = "3D/";
-	$Folder1 = "../../3D/";
-	$Folder2 = "../../../Raw/3D/";
+	
+
+	if (!empty($_FILES['product3D']['name'])) {
+		# code...
+		$Product3D = $_FILES['product3D']['name'];
+		$Folder = "3D/";
+	// $Folder1 = "../../3D/";
+	// $Folder2 = "../../../Raw/3D/";
 	$filename3D = $Folder . '_' . $Product3D;
-	$filename3D1 = $Folder1 . '_' . $Product3D;
-	$filename3D2 = $Folder2 . '_' . $Product3D;
+	// $filename3D1 = $Folder1 . '_' . $Product3D;
+	// $filename3D2 = $Folder2 . '_' . $Product3D;
 	$product3D = copy($_FILES['product3D']['tmp_name'], $filename3D);
-	$product3D1 = copy($_FILES['product3D']['tmp_name'], $filename3D1);
-	$product3D2 = copy($_FILES['product3D']['tmp_name'], $filename3D2);
+	// $product3D1 = copy($_FILES['product3D']['tmp_name'], $filename3D1);
+	// $product3D2 = copy($_FILES['product3D']['tmp_name'], $filename3D2);
 	if (!$product3D) {
-		echo "<p>Cannot Upload  Product Profile</p>";
+		echo "<p>Cannot Upload  Product 3D File</p>";
 		exit();
 	}
-
+	
+}else{
+	$filename3D="";
+}
 	/////////////////////////////////////////////////////////////////////////
-
+	
 	//////////////////////////////////AR/////////////////////////////////
+
+	if (!empty($_FILES['productAR']['name'])) {
 
 	$ProductAR = $_FILES['productAR']['name'];
 	$Folder = "AR/";
-	$Folder1 = "../../AR/";
-	$Folder2 = "../../../Raw/AR/";
+	// $Folder1 = "../../AR/";
+	// $Folder2 = "../../../Raw/AR/";
 	$filenameAR = $Folder . '_' . $ProductAR;
-	$filenameAR1 = $Folder1 . '_' . $ProductAR;
-	$filenameAR2 = $Folder2 . '_' . $ProductAR;
+	// $filenameAR1 = $Folder1 . '_' . $ProductAR;
+	// $filenameAR2 = $Folder2 . '_' . $ProductAR;
 	$productAR = copy($_FILES['productAR']['tmp_name'], $filenameAR);
-	$productAR1 = copy($_FILES['productAR']['tmp_name'], $filenameAR1);
-	$productAR2 = copy($_FILES['productAR']['tmp_name'], $filenameAR2);
+	// $productAR1 = copy($_FILES['productAR']['tmp_name'], $filenameAR1);
+	// $productAR2 = copy($_FILES['productAR']['tmp_name'], $filenameAR2);
 	if (!$productAR) {
-		echo "<p>Cannot Upload  Product Profile</p>";
+		echo "<p>Cannot Upload  Product AR File</p>";
 		exit();
 	}
+}else {
+	$filenameAR="";
+}
 
 	/////////////////////////////////////////////////////////////////////////
 
@@ -200,7 +212,7 @@ if (isset($_POST['btnregister'])) {
 											<div class="mb-3" id="selectedBanner" style="margin-left: 52%;margin-bottom: 52%"></div>
 											<div class="form-control form-control-lg">
 												<div id="forfile">
-													<input name="productprofile" class="img" id="file" type="file" accept="image/*" />
+													<input name="productprofile" class="img" id="file" type="file" accept="image/*" required />
 													<label for="file">
 														<i class="fa fa-image"></i> &nbsp
 														Choose Picture

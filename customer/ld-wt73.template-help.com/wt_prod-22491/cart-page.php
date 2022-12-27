@@ -11,7 +11,7 @@ include('shoppingcart_functions.php');
 
 if (!isset($_SESSION['cid'])) {
     echo "<script>alert('Pls Login Again')</script>";
-    echo "<script>window.location='../../../High1/accountchoose.php'</script>";
+    echo "<script>window.location='accountchoose.php'</script>";
 }
 
 
@@ -37,7 +37,7 @@ if (isset($_GET['action'])) {
 <form action="cart-page.php" method="GET">
 
     <section class="breadcrumbs-custom">
-        <div class="parallax-container" data-parallax-img="images/bg-about.jpg">
+        <div class="parallax-container" data-parallax-img="../../../work/images/bg-about.jpg">
             <div class="breadcrumbs-custom-body parallax-content context-dark">
                 <div class="container">
                     <h2 class="breadcrumbs-custom-title">Cart Page</h2>
@@ -96,7 +96,7 @@ if (isset($_GET['action'])) {
                             ?>
 
                                 <tr>
-                                    <td><a class="table-cart-figure" href="single-product.php?productid=<?php echo $productid ?>"><img src="<?php echo $image1 ?>" alt="" width="146" height="132" /></a><a class="table-cart-link" href="single-product.html"><?php echo $productname ?></a></td>
+                                    <td><a class="table-cart-figure" href="single-product.php?productid=<?php echo $productid ?>"><img src="<?php echo $image1 ?>" alt="" width="146" height="132" /></a><a class="table-cart-link" href="single-product.php?productid=<?php echo $productid ?>"><?php echo $productname ?></a></td>
                                     <td><?php echo $price ?> MMK</td>
                                     <td>
                                         <?php echo $quantity ?>
@@ -135,7 +135,7 @@ if (isset($_GET['action'])) {
                                 <div class="group-md group-middle">
                                     <div class="heading-5 fw-medium text-gray-500">Total Quantity</div>
                                     <div class="heading-3 fw-normal"><?php echo CalculateTotalQuantity() ?> Pcs</div>
-                                    <!-- <p> | </p> -->
+
                                     <div class="heading-5 fw-medium text-gray-500">Total Price</div>
                                     <div class="heading-3 fw-normal"><?php echo CalculateTotalAmount() ?> MMK</div>
                                 </div>

@@ -7,12 +7,8 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 include('connect.php');
-// include('autoidfunction.php');
 
-// include('shoppingcart_functions.php');
-
-
-$file_checker = 'images/captureimage.jpeg';
+$file_checker = '../../../work/images/captureimage.jpeg';
 
 
 
@@ -81,8 +77,8 @@ if (file_exists($file_checker)) {
     ';
 
         // $mail->msgHTML(file_get_contents('checkout.php'), __DIR__);
-        $mail->addEmbeddedImage(dirname(__FILE__) . '/images/captureimage.jpeg', 'order_report');
-        // $mail->addAttachment('./images/ha.jpg', 'new.jpg');    //Optional name
+        $mail->addEmbeddedImage(dirname(__FILE__) . '/../../../work/images/captureimage.jpeg', 'order_report');
+        // $mail->addAttachment('./../../../work/images/ha.jpg', 'new.jpg');    //Optional name
         // $mail->addAttachment('/files/report.docx');
 
         $mail->AltBody = 'This text will show in the main page beside the name.';
@@ -92,7 +88,7 @@ if (file_exists($file_checker)) {
         // echo 'Message has been sent <br>';
         echo "<script>alert('Please Check Your Gmail !')</script>";
 
-        $file_pointer = "images/captureimage.jpeg";
+        $file_pointer = "../../../work/images/captureimage.jpeg";
 
         // Use unlink() function to delete a file
         if (!unlink($file_pointer)) {
@@ -108,6 +104,10 @@ if (file_exists($file_checker)) {
         // echo $customerid;
     } catch (Exception $e) {
         echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+        echo "<script>alert('Message Could Not Send Due To Internet connection.')</script>";
+        echo "<script>alert('We will send you to the home page.')</script>";
+
+        echo "<script>window.location='../wt_prod-22491'</script>";
     }
     // }
 
@@ -115,7 +115,7 @@ if (file_exists($file_checker)) {
 
 } else {
 
-    $file_pointer = "images/captureimage.jpeg";
+    $file_pointer = "../../../work/images/captureimage.jpeg";
 
     // Use unlink() function to delete a file
     if (!unlink($file_pointer)) {
@@ -126,9 +126,3 @@ if (file_exists($file_checker)) {
 
     echo "<script>window.location='index.php'</script>";
 }
-?>
-
-<!-- <form action="phpmailer.php" method="post">
-    <button type="submit" name="btnsendmail">Send Mail</button>
-
-</form> -->

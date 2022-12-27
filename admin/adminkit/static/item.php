@@ -6,7 +6,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 $itemphpans = "active";
-include('../../connect.php');
+include('connect.php');
 include('sheader.php');
 
 if (isset($_SESSION['sid'])) {
@@ -231,8 +231,8 @@ echo $rawcount;
 											<tr>
 												<td colspan="2" style="text-align:center;">
 													<br>
-													<input type="button" name="add_item" value="Add More" onClick="addMore();" />
-													<input type="button" name="del_item" value="Delete" onClick="deleteRow();" />
+													<input class="btn btn-lg btn-primary" type="button" name="add_item" value="Add More" onClick="addMore();" />
+													<input class="btn btn-lg btn-primary" type="button" name="del_item" value="Delete" onClick="deleteRow();" />
 													<span class="success"><?php if (isset($message)) {
 																				echo $message;
 																			} ?></span>
@@ -245,7 +245,7 @@ echo $rawcount;
 											<tr>
 												<td colspan="2" style="text-align:center;">
 													<br>
-													<input type="submit" name="save" value="Save" />
+													<input class="btn btn-lg btn-primary" type="submit" name="save" value="Save" />
 													<br>
 												</td>
 

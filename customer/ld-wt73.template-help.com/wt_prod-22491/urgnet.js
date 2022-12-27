@@ -1,29 +1,29 @@
 
-        window.scrollTo(0, 0);
+window.scrollTo(0, 0);
 
-        // Convert the div to image (canvas)
-        html2canvas(document.getElementById("capture")).then(function(canvas) {
+// Convert the div to image (canvas)
+html2canvas(document.getElementById("capture")).then(function (canvas) {
 
-            // Get the image data as JPEG and 0.9 quality (0.0 - 1.0)
-            console.log(canvas.toDataURL("image/jpeg", 0.9));
+    // Get the image data as JPEG and 0.9 quality (0.0 - 1.0)
+    console.log(canvas.toDataURL("image/jpeg", 0.9));
 
-            var ajax = new XMLHttpRequest();
-
-
-            ajax.open("POST", "save-capture.php", true);
+    var ajax = new XMLHttpRequest();
 
 
-            ajax.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    ajax.open("POST", "save-capture.php", true);
 
 
-            ajax.send("imagesave=" + canvas.toDataURL("image/jpeg", 0.9));
+    ajax.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 
-            ajax.onreadystatechange = function() {
 
-                if (this.readyState == 4 && this.status == 200) {
+    ajax.send("imagesave=" + canvas.toDataURL("image/jpeg", 0.9));
 
-                    console.log(this.responseText);
-                }
-            };
+    ajax.onreadystatechange = function () {
 
-        });
+        if (this.readyState == 4 && this.status == 200) {
+
+            console.log(this.responseText);
+        }
+    };
+
+});

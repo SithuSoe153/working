@@ -4,7 +4,7 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-include('../../connect.php');
+include('connect.php');
 if (isset($_REQUEST['sid'])) {
     $sid = $_REQUEST['sid'];
     $select = "SELECT * FROM staff where staffid='$sid'";

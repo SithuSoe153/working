@@ -13,16 +13,6 @@ if (isset($_SESSION['cid'])) {
     echo "<script>window.location='CLogOut.php'</script>";
 }
 
-// if (isset($_SESSION['sid'])) {
-//     // echo "<script>alert('You are staff')</script>";
-//     echo "<script>window.location='adminkit/static/index.php'</script>";
-// }
-
-// if (isset($_SESSION['cid'])) {
-//     // echo "<script>alert('You are Customer')</script>";
-//     echo "<script>window.location='customerprofile.php'</script>";
-// }
-
 ?>
 
 <!DOCTYPE html>
@@ -88,8 +78,8 @@ if (isset($_SESSION['cid'])) {
 
         button {
             border-radius: 20px;
-            border: 1px solid #fe7865;
-            background-color: #fe7865;
+            border: 1px solid #92c5d9;
+            background-color: #92c5d9;
             color: #FFFFFF;
             font-size: 12px;
             font-weight: bold;
@@ -215,8 +205,8 @@ if (isset($_SESSION['cid'])) {
 
         .overlay {
             background: #de640f;
-            background: -webkit-linear-gradient(to right, #d78477, #ec7663);
-            background: linear-gradient(to right, #d78477, #ec7663);
+            background: -webkit-linear-gradient(to right, #92c5d9, #55539c);
+            background: linear-gradient(to right, #71abc2, #7fc3de);
             background-repeat: no-repeat;
             background-size: cover;
             background-position: 0 0;
@@ -316,7 +306,7 @@ if (isset($_SESSION['cid'])) {
 
         #selectedBanner {
             position: absolute;
-            margin-top: 60%;
+            margin-top: 55%;
             margin-right: 60%;
             z-index: 10;
         }
@@ -330,9 +320,6 @@ if (isset($_SESSION['cid'])) {
     <div class="containerr" id="containerr">
         <div class="form-containerr sign-up-containerr">
             <form action="accountchoose.php" method="POST" enctype="multipart/form-data">
-                <!-- <h1>Sign in as Staff or Admin</h1> -->
-
-                <!-- <span>or use your email for registration</span> -->
 
                 <input type="text" name="txtname" required placeholder="Enter Your Name">
                 <input type="email" name="txtmail" required placeholder=" Email Address">
@@ -380,7 +367,7 @@ if (isset($_SESSION['cid'])) {
                     <h1>Sign in as Customer!</h1>
                     <p>To keep connected with us please login with your personal info</p>
                     <button class="ghost" id="signIn">Sign In</button>
-                    <a href="index.php">
+                    <a href="../wt_prod-22491/">
                         <button class="ghost"> Back </button>
                     </a>
                 </div>
@@ -388,7 +375,7 @@ if (isset($_SESSION['cid'])) {
                     <h1>Sign up new account!</h1>
                     <p>Enter your personal details and start journey with us</p>
                     <button class="ghost" id="signUp">Sign Up</button>
-                    <a href="index.php">
+                    <a href="../wt_prod-22491/">
                         <button class="ghost"> Back </button>
                     </a>
 

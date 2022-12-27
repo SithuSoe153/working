@@ -69,11 +69,6 @@ function IndexOf($productid)
 }
 
 
-
-
-
-
-
 function Remove($productid)
 {
 	$index = IndexOf($productid);

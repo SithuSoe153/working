@@ -8,7 +8,7 @@ include('connect.php');
 
 
 $select1 = "SELECT * FROM message where message_status = 0";
-$query1 = mysqli_query($con, $select1);
+$query1 = mysqli_query($connection, $select1);
 $ms = mysqli_num_rows($query1);
 if ($ms > 0) {
   echo "<span class='indicator'></span>";
