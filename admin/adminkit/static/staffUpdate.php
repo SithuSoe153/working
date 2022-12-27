@@ -44,19 +44,19 @@ if (isset($_POST['btnregister'])) {
 
 	$tet = $_FILES['staffprofile']['name'];
 
-    if (!$tet) {
-        $filename = $staffprofile;
-    } else{
-        $Image = $_FILES['staffprofile']['name'];
-        $Folder = "../../../work/images/";
-        $filename = $Folder . '_' . $Image;
-        $image = copy($_FILES['staffprofile']['tmp_name'], $filename);
+	if (!$tet) {
+		$filename = $staffprofile;
+	} else {
+		$Image = $_FILES['staffprofile']['name'];
+		$Folder = "../../../work/images/";
+		$filename = $Folder . '_' . $Image;
+		$image = copy($_FILES['staffprofile']['tmp_name'], $filename);
 
-        if (!$image) {
-            echo "<p>Cannot Upload  Staff Profile</p>";
-            exit();
-        }
-    }
+		if (!$image) {
+			echo "<p>Cannot Upload  Staff Profile</p>";
+			exit();
+		}
+	}
 
 
 	/////////////////////////////////////////////////////////////////////////
@@ -171,7 +171,7 @@ if (isset($_POST['btncancel'])) {
 
 										<div class="text-center mt-3">
 											<button name="btnregister" class="btn btn-lg btn-primary">Register</button>
-											<button name="btnregister" class="btn btn-lg btn-primary">Back</button>
+											<button name="btncancel" class="btn btn-lg btn-primary">Back</button>
 											<input type="reset" class="btn btn-lg btn-primary" value="Reset">
 										</div>
 									</div>

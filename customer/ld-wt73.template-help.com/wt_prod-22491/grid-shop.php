@@ -183,6 +183,8 @@ include('cheaders.php');
                                         $price = $arr['unitprice'];
                                         $Image = $arr['productprofile'];
                                         $quantity = $arr['unitquantity'];
+                                        $treed = $arr['3D'];
+
                         ?>
 
                                         <div class="col-sm-6 col-md-4 col-lg-6 col-xl-4">
